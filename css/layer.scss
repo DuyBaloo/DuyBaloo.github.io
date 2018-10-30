@@ -1,0 +1,21 @@
+body {
+  background: #9e9e9e;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    background: black;
+    height: 500px;
+    width: 750px;
+    top: 300px;
+    text-align: center;
+    position: relative;
+    -webkit-transform: rotate(-15deg) skew(30deg) scale(0.8);
+    -moz-transform: rotate(-15deg) skew(30deg) scale(0.8);
+    -ms-transform: rotate(-15deg) skew(30deg) scale(0.8);
+    -o-transform: rotate(-15deg) skew(30deg) scale(0.8);
+    transform: rotate(-15deg) skew(30deg) scale(0.8);
+  }
+  
+}
