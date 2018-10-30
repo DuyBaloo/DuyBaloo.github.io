@@ -1,0 +1,191 @@
+$background:#af6936;
+$text:#9e9e9e;
+$span:#be6628;
+$box-color:#19776a;
+$text-nav:#24457e;
+$nav-bar:#003500;
+
+//getting the font
+@font-face {
+  font-family: myfont;
+  src: url('../Font/GothamBook.ttf');
+}
+
+//format bold style
+@font-face {
+  font-family: myfont;
+  src: url('../Font/gothambold.ttf');
+  font-weight: bold;
+}
+
+//global settings
+*{
+  margin:0;
+  padding:0;
+  font-family: myfont, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  width: auto;
+  height:2000px;
+}
+
+//styling the span
+span{
+  color:$span;
+}
+
+//styling the intro
+#intro{
+  height:900px;
+
+  margin-right: 20px;
+  background: url('../img/webpic.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+
+  .img {
+    height: 100vh;
+
+    .text{
+      width:100%;
+      top: 875px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      position: absolute;
+      text-align: center;
+
+      //seting the delay of each h1
+      .animate1 {
+        -webkit-animation-delay: 0s;
+        -moz-animation-delay: 0s;
+        -o-animation-delay: 0s;
+        animation-delay: 0s;
+      }
+      .animate2 {
+        -webkit-animation-delay: 500ms;
+        -moz-animation-delay: 500ms;
+        -o-animation-delay: 500ms;
+        animation-delay: 500ms;
+      }
+      h1 {
+        color: $text;
+        letter-spacing: 5px;
+        line-height: 1.3;
+        opacity: 0;
+        -webkit-animation: reveal 2s normal forwards;
+        -moz-animation: reveal 2s normal forwards;
+        -o-animation: reveal 2s normal forwards;
+        animation: reveal 2s normal forwards;
+
+      }
+    }
+  }
+}
+
+//the effect
+@keyframes reveal {
+  0%{
+    opacity: 0;
+    -webkit-transform: translate(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+}
+
+.nav-bar {
+  top:0;
+  ;//set this to 0 to add effect
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background: $nav-bar 0.9;
+  display: inline-block;
+  z-index: 1;
+  .left {
+    opacity: .9;
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size:15px;
+    h1 {
+      color: $text;
+      text-transform: uppercase;
+      padding: 20px;
+      letter-spacing: 2px;
+    }
+  }
+  .right {
+    opacity: .9;
+    font-size: 18px;
+    width: 50%;
+    float: right;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    list-style: none;
+
+
+    li {
+      height: 100px;
+      width: 25%;
+      display: inline-block;
+      padding: 30px;
+      vertical-align: middle;
+      a {
+        text-decoration: none;
+        color: $text;
+        text-transform: uppercase;
+      }
+      &:hover {
+        a{
+          color: $background;
+        }
+
+      }
+    }
+
+  }
+}
+
+.about{
+  height: 600px;
+  width:60%;
+  margin:auto;
+  position:relative;
+  top:100px;
+  .about-body{
+    height:100%;
+    width:100%;
+    display:inline-block;
+    .pic{
+      width:50%;
+      float:left;
+      img{
+        height:100%;
+        width:100%;
+      }
+    }
+    .description{
+      float:right;
+      width:50%;
+      height:100%;
+    }
+  }
+}

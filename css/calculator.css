@@ -1,0 +1,74 @@
+@font-face {
+  font-family: myfont;
+  src: url("../Font/GothamBook.ttf"); }
+@font-face {
+  font-family: myfont;
+  src: url("../Font/gothambold.ttf");
+  font-weight: bold; }
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: linear-gradient(to right, #1D2B64, #F8CDDA);
+  height: 100vh;
+  margin: 0; }
+
+.grid {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  opacity: 0.85;
+  max-width: 320px;
+  border: 10px solid #000;
+  border-radius: 20px; }
+
+form {
+  color: #F8CDDA;
+  opacity: 0.8; }
+  form .textview {
+    width: 100%;
+    border: none;
+    text-align: right;
+    font-size: 30px;
+    height: 60px;
+    font-weight: bold;
+    opacity: 1;
+    color: #000; }
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: minmax(70px, auto);
+  grid-gap: 5px;
+  padding: 3px; }
+  .calc-buttons .button {
+    background: #af6936;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: myfont, sans-serif;
+    font-size: 30px;
+    border: 2px solid #000;
+    width: 70px;
+    height: 70px; }
+    .calc-buttons .button .plus {
+      grid-row: 3 / 4;
+      grid-column: 4; }
+    .calc-buttons .button .zero {
+      grid-row: 5;
+      grid-column: 1 / 2; }
+    .calc-buttons .button .equal {
+      grid-row: 5;
+      grid-column: 4; }
+    .calc-buttons .button .dot {
+      grid-column: 3;
+      grid-row: 5; }
+  .calc-buttons .button:hover {
+    background: #000;
+    color: #fff; }
+
+/*# sourceMappingURL=calculator.css.map */

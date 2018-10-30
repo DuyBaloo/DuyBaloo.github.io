@@ -1,13 +1,13 @@
 //getting the font
 @font-face {
   font-family: myfont;
-  src: url('../Font/GothamBook.ttf');
+  src: local('gothambook.ttf');
 }
 
 //format bold style
 @font-face {
   font-family: myfont;
-  src: url('../Font/gothambold.ttf');
+  src: local('gothambold.ttf');
   font-weight: bold;
 }
 
@@ -61,7 +61,6 @@
         font-size: 20px;
         font-weight: bold;
         transition: 0.5s;
-        letter-spacing: 1px;
       }
       input:focus ~ label,
       input:valid ~ label {
