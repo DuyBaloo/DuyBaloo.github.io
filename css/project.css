@@ -1,0 +1,61 @@
+@font-face {
+  font-family: myfont;
+  src: url("../Font/GothamBook.ttf"); }
+@font-face {
+  font-family: myfont;
+  src: url("../Font/gothambold.ttf");
+  font-weight: bold; }
+* {
+  margin: 0;
+  font-family: myfont, sans-serif;
+  box-sizing: border-box; }
+
+section {
+  height: 100vh;
+  text-align: center; }
+  section .text {
+    height: 40%;
+    background: #003500;
+    color: #be6628;
+    font-size: 30px;
+    padding: 150px 0 0 0; }
+  section .container {
+    background: #9e9e9e;
+    height: 60%; }
+    section .container .grid-items {
+      position: absolute;
+      left: 50%;
+      top: 70%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      display: grid;
+      grid-template-columns: repeat(2, 400px);
+      grid-gap: 20px; }
+      section .container .grid-items .item {
+        height: 250px;
+        position: relative;
+        z-index: 1; }
+        section .container .grid-items .item img {
+          width: 400px;
+          height: 250px;
+          border: 1px solid black;
+          border-radius: 10px; }
+        section .container .grid-items .item p {
+          height: 60px;
+          bottom: 0;
+          width: 100%;
+          padding: 10px;
+          color: #fff;
+          position: absolute;
+          background: rgba(0, 0, 0, 0.8);
+          opacity: 0;
+          transition: ease-in-out 0.5s;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px; }
+        section .container .grid-items .item:hover p {
+          opacity: 1; }
+
+/*# sourceMappingURL=project.css.map */

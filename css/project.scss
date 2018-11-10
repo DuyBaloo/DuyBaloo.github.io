@@ -1,0 +1,81 @@
+$nav-bar:#003500;
+$text:#9e9e9e;
+$span:#be6628;
+//getting the font
+@font-face {
+  font-family: myfont;
+  src: url('../Font/GothamBook.ttf');
+}
+
+//format bold style
+@font-face {
+  font-family: myfont;
+  src: url('../Font/gothambold.ttf');
+  font-weight: bold;
+}
+
+*{
+  margin:0;
+  font-family: myfont, sans-serif;
+  box-sizing: border-box;
+}
+section{
+  height:100vh;
+  text-align: center;
+  .text{
+    height: 40%;
+    background: $nav-bar;
+    color: $span;
+    font-size:30px;
+    padding: 150px 0 0 0;
+  }
+  .container{
+    background:$text;
+    height:60%;
+    .grid-items{
+      position:absolute;
+      left:50%;
+      top:70%;
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      display: grid;
+      grid-template-columns: repeat(2, 400px);
+      grid-gap:20px;
+
+      .item {
+        height:250px;
+        position: relative;
+        z-index: 1;
+        img {
+
+          width: 400px;
+          height: 250px;
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+        p {
+          height:60px;
+          bottom:0;
+          width:100%;
+          padding:10px;
+          color:#fff;
+          position: absolute;
+          background: rgba(0,0,0,0.8);
+          opacity: 0;
+          transition: ease-in-out 0.5s;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+        &:hover{
+          p{
+            opacity: 1;
+          }
+        }
+      }
+
+    }
+  }
+}

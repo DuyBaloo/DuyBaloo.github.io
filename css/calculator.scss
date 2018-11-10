@@ -57,6 +57,10 @@ form{
   grid-gap:5px;
   padding:3px;
 
+  .equal{
+    grid-row:5;
+    grid-column: 4;
+  }
   .button {
     background: #af6936;
     font-weight: bold;
@@ -76,10 +80,7 @@ form{
       grid-row: 5;
       grid-column: 1 / 2;
     }
-    .equal{
-      grid-row:5;
-      grid-column: 4;
-    }
+
     .dot{
       grid-column: 3;
       grid-row:5;

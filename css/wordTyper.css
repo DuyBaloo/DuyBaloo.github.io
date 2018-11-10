@@ -1,0 +1,69 @@
+@font-face {
+  font-family: myfont;
+  src: url("../Font/GothamBook.ttf"); }
+@font-face {
+  font-family: myfont;
+  src: url("../Font/gothambold.ttf");
+  font-weight: bold; }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: myfont, sans-serif;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  background: #56ab2f;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top right, #56ab2f 30%, #a8e063);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top right, #56ab2f 30%, #a8e063);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.lighter {
+  height: 70px;
+  text-align: center;
+  background: #fff;
+  padding: 15px;
+  color: #56ab2f; }
+
+.container {
+  text-align: center;
+  color: #fff;
+  margin: auto; }
+  .container .intro {
+    padding: 100px; }
+    .container .intro #message {
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .container .intro #second {
+      color: #be6628; }
+    .container .intro .wordDisplay {
+      padding: 30px;
+      font-size: 50px; }
+    .container .intro input {
+      border-radius: 5px;
+      height: 40px;
+      min-width: 500px;
+      text-indent: 15px; }
+    .container .intro .counter {
+      padding: 40px; }
+    .container .intro .instruction {
+      position: absolute;
+      width: 400px;
+      left: 50%;
+      top: 60%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      font-size: 20px; }
+
+/*# sourceMappingURL=wordTyper.css.map */

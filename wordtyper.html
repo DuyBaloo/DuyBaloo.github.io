@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/wordTyper.css">
+  <title>Word Typer</title>
+</head>
+<body>
+  <header class="lighter">
+    <h1>Word Typer</h1>
+  </header>
+
+  <div class="container">
+    <div class="intro">
+      <p>
+        Type The Word Below Within <span id="second">4</span> Seconds:
+      </p>
+      <h2 class="wordDisplay" id="word">hello</h2>
+      <input type="text" placeholder="Type to start the game..." id="input" autofocus>
+      <h4 class="" id="message"></h4>
+
+      <div class="counter">
+        <div class="time">
+          <h3>Time Left:
+          <span id="time">0</span>
+          </h3>
+        </div>
+        <div class="score">
+          <h3>Score:
+          <span id="point">0</span>
+          </h3>
+        </div>
+      </div>
+      <div class="instruction">
+        <h5>Instructions</h5>
+        <p>Type the word shown on the screen within the time limit. If you want to play again just type in the word. Your score will be reset each time.</p>
+      </div>
+    </div>
+  </div>
+  <script src="./js/wordTyper.js" charset="utf-8"></script>
+</body>
+</html>

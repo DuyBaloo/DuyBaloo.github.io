@@ -1,9 +1,14 @@
 $background:#af6936;
 $text:#9e9e9e;
+$intro-text:#24457e;
 $span:#be6628;
 $box-color:#19776a;
 $text-nav:#24457e;
 $nav-bar:#003500;
+$background1:#35001E;
+$background2:#0D0600;
+$skill-item: #12bd1f;
+$skill:#009d3a;
 
 //getting the font
 @font-face {
@@ -19,6 +24,10 @@ $nav-bar:#003500;
 }
 
 //global settings
+html{
+  scroll-behavior: smooth;
+}
+
 *{
   margin:0;
   padding:0;
@@ -26,9 +35,8 @@ $nav-bar:#003500;
   box-sizing: border-box;
 }
 
-body{
-  width: auto;
-  height:2000px;
+section{
+  height:100vh;
 }
 
 //styling the span
@@ -36,30 +44,49 @@ span{
   color:$span;
 }
 
-//styling the intro
+//for easier navigation
+.hidden{
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  height:0;
+}
+//styling the face of the website
 #intro{
-  height:900px;
 
-  margin-right: 20px;
   background: url('../img/webpic.jpg') no-repeat;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-
+  border-bottom:1px solid black;
   .img {
-    height: 100vh;
-
     .text{
       width:100%;
-      top: 875px;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 30px;
       position: absolute;
       text-align: center;
 
+      i{
+        top:50vh;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        position:absolute;
+        color:$text;
+        &:hover{
+          color:$span;
+          transition:1s;
+        }
+      }
       //seting the delay of each h1
       .animate1 {
         -webkit-animation-delay: 0s;
@@ -74,7 +101,6 @@ span{
         animation-delay: 500ms;
       }
       h1 {
-        color: $text;
         letter-spacing: 5px;
         line-height: 1.3;
         opacity: 0;
@@ -82,7 +108,7 @@ span{
         -moz-animation: reveal 2s normal forwards;
         -o-animation: reveal 2s normal forwards;
         animation: reveal 2s normal forwards;
-
+        color:$text;
       }
     }
   }
@@ -109,23 +135,31 @@ span{
 
 }
 
+//Navigation bar
 .nav-bar {
   top:0;
-  ;//set this to 0 to add effect
+  opacity:0;
   position: fixed;
   height: 80px;
   width: 100%;
-  background: $nav-bar 0.9;
+  background: $nav-bar;
   display: inline-block;
   z-index: 1;
+  transition: 1s;
   .left {
+    a{
+      text-decoration: none;
+      &:visited{
+        color:$text;
+      }
+    }
+
     opacity: .9;
     width: 50%;
     float: left;
     text-align: center;
     font-size:15px;
     h1 {
-      color: $text;
       text-transform: uppercase;
       padding: 20px;
       letter-spacing: 2px;
@@ -164,28 +198,500 @@ span{
   }
 }
 
+//About section introducing
 .about{
-  height: 600px;
-  width:60%;
+  background: url('../img/aboutbackground.jpg')no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  background-position:center;
+  width:100%;
   margin:auto;
   position:relative;
-  top:100px;
+  transition: 1s;
   .about-body{
-    height:100%;
-    width:100%;
-    display:inline-block;
-    .pic{
-      width:50%;
-      float:left;
-      img{
-        height:100%;
-        width:100%;
+    height:70%;
+    width:60%;
+    left:50%;
+    -webkit-transform: translate(-50%,20%);
+    -moz-transform: translate(-50%,20%);
+    -ms-transform: translate(-50%,20%);
+    -o-transform: translate(-50%,20%);
+    transform: translate(-50%,20%);
+    background: #fff;
+    position:absolute;
+    display:block;
+    text-align: center;
+    background:rgba(255,255,255,.5);
+    border-radius:10px;
+
+    a{
+      text-decoration: none;
+      color:#fff;
+      &:visited {
+        color: #fff;
       }
     }
-    .description{
-      float:right;
-      width:50%;
-      height:100%;
+    p{
+      -webkit-transform: translateY(90%);
+      -moz-transform: translateY(90%);
+      -ms-transform: translateY(90%);
+      -o-transform: translateY(90%);
+      transform: translateY(90%);
+      font-size:20px;
     }
+
+    h1{
+      text-align: center;
+      padding:40px;
+      font-size: 40px;
+      color:#fff;
+      font-weight: lighter;
+    }
+
+
+    .about-left{
+      position:absolute;
+      float:left;
+      left:25%;
+      top:80%;
+      height:70px;
+      width:200px;
+      background:#020e18;
+      border-radius: 5px;
+      &:hover{
+        background:$background;
+        color:$text;
+        }
+      }
+    }
+    .about-right{
+      position:absolute;
+      float:right;
+      top:80%;
+      left:58%;
+      height:70px;
+      width:200px;
+      background:#020e18;
+      border-radius: 5px;
+      &:hover{
+        background:$background;
+        color:$text;
+      }
+    }
+  }
+
+
+//skill bars
+.skills {
+  background: url('../img/skill.jpg')no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  width:100%;
+  top: 200%;
+  .skills-body {
+    height:100vh;
+    width:800px;
+    text-align: center;
+    background: rgba(0, 40, 40, 0.8);
+    margin:0 auto;
+    h1{
+      color:#f9f9f9;
+      padding: 100px 0;
+    }
+    h3{
+      margin: 0 0 20px 0;
+      color:$span;
+    }
+
+    .skill-item{
+      padding:35px;
+      opacity: 1;
+      text-align: left;
+      list-style:none;
+      position:relative;
+    }
+    .bar{
+      background: #353b48;
+      width:80%;
+      display:block;
+      height:4px;
+      opacity:0.5;
+      border: 1px solid rgba(255,255,255,.5);
+      border-radius: 3px;
+      overflow: hidden;
+      box-shadow: 0 0 10px 2px #2187e7;
+      position:absolute;
+    }
+    .html{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:75%;
+      border-radius: 3px;
+    }
+    .style{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:75%;
+      border-radius: 3px;
+    }
+    .item3{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:60%;
+      border-radius: 3px;
+    }
+    .jquery{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:40%;
+      border-radius: 3px;
+    }
+    .photoshop{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:55%;
+      border-radius: 3px;
+    }
+    .illustrator{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:55%;
+      border-radius: 3px;
+    }
+    .git{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:55%;
+      border-radius: 3px;
+    }
+    .wordpress{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:55%;
+      border-radius: 3px;
+    }
+    .react{
+      position:absolute;
+      height:4px;
+      background:$skill-item;
+      width:50%;
+      border-radius: 3px;
+    }
+    .left {
+      width:45%;
+      float: left;
+
+    }
+    .right {
+      width:45%;
+      float: right;
+    }
+
+  }
+}
+
+//styling the aside bar
+aside{
+  opacity:0;
+  right:0;
+  top:40vh;
+  position:fixed;
+  z-index: 1;
+  margin-right:15px;
+  font-size: 15px;
+  i{
+    padding:8px 0;
+    color:#fff;
+    &:hover{
+      color:$text;
+    }
+  }
+}
+.contact{
+  height:50vh;
+  background: #232323;
+  position:relative;
+  text-align: center;
+  h1{
+    position:absolute;
+    top:10%;
+    left:50%;
+    color:$text;
+    -webkit-transform: translate(-50%,-20%);
+    -moz-transform: translate(-50%,-20%);
+    -ms-transform: translate(-50%,-20%);
+    -o-transform: translate(-50%,-20%);
+    transform: translate(-50%,-20%);
+  }
+  .info{
+    width:600px;
+    height:250px;
+    top:43%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position:absolute;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:5px;
+    h2{
+      color:$text;
+    }
+    .button{
+      font-size: 15px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      cursor:pointer;
+      width:30%;
+      border-radius: 5px;
+      &:hover{
+        background: $nav-bar;
+        color:$span;
+      }
+    }
+    input, textarea{
+      padding:0 10px;
+      color:#fff;
+      border:none;
+      background:#545454;
+    }
+  }
+}
+
+//footer of the page
+footer{
+  background:$nav-bar;
+  height:60px;
+  text-align: center;
+  padding:20px;
+  a{
+    color:$span;
+    text-decoration: none;
+    &:visited{
+      color:$span;
+    }
+    &:hover{
+      color:$text;
+    }
+  }
+}
+
+@media (max-width:1450px) {
+  .skills{
+    .skills-body{
+      max-width:75%;
+      margin: 0 auto;
+      h1{
+        padding: 150px 0 50px 0;
+        font-size:23px;
+      }
+      .right{
+        padding-right:20px;
+      }
+      .skill-item{
+        h3{
+          font-size: 16.5px;
+        }
+      }
+    }
+  }
+
+  .nav-bar{
+    .left{
+      h1{
+        font-size:20px;
+        padding: 26px 20px;
+      }
+    }
+    .right{
+      .skill-item{
+        margin-right:10px;
+      }
+      li{
+        font-size: 15px;
+        text-align: center;
+        width: 22%;
+
+        a{
+
+        }
+      }
+
+    }
+  }
+  .about{
+    .about-body{
+      width: 70%;
+      height:80%;
+      -webkit-transform: translate(-50%,13%);
+      -moz-transform: translate(-50%,13%);
+      -ms-transform: translate(-50%,13%);
+      -o-transform: translate(-50%,13%);
+      transform: translate(-50%,13%);
+      .about-left{
+        float: none;
+        width:50%;
+        top:74%;
+        left:25%;
+        border-radius: 5px;
+      }
+      .about-right{
+        float:none;
+        width:50%;
+        top:85%;
+        left:25%;
+        border-radius: 5px;
+      }
+      h1{
+        font-size: 35px;
+      }
+    }
+  }
+  aside{
+    font-size:15px;
+  }
+  .contact{
+    h1{
+      font-size: 24px;
+    }
+    .container{
+      h2{
+        padding-bottom: 20px;
+        font-size:28px;
+      }
+    }
+  }
+}
+
+@media(max-width: 600px){
+  section{
+    height:140vh;
+  }
+  #intro{
+    height:100vh;
+    .img{
+      .text{
+        h1{
+          font-size:25px;
+          line-height: 1;
+          padding:15px 20px;
+        }
+        i{
+          font-size:45px;
+        }
+      }
+    }
+  }
+
+  .nav-bar{
+    height:120px;
+    .left,.right{
+      width:100%;
+      float:none;
+    }
+    .left{
+
+      h1{
+        font-size:20px;
+        padding:26px 26px 18px 26px;
+
+      }
+    }
+    .right{
+      li{
+        width:25%;
+        padding: 0 20px 0 0;
+        height:50px;
+        font-size:15px;
+      }
+    }
+  }
+
+  .about{
+    .about-body{
+      min-width: 75%;
+      h1{
+        font-size:30px;
+        }
+      .about-left,.about-right{
+        width: 40%;
+        height:50px;
+        left:30%;
+      }
+      .about-left{
+        top: 76%;
+      }
+      p{
+        font-size:12px;
+        padding-top:3px;
+      }
+    }
+  }
+
+  .skills{
+    .skills-body{
+      height:100%;
+      h1{
+        padding: 150px 0 40px 0;
+      }
+      .left,.right{
+        float: none;
+        width:100%;
+        padding-right: 20px;
+        .skill-item{
+          padding: 18px 35px;
+          h3{
+            font-size: 13px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  .contact{
+    h1{
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    width:100%;
+    .container{
+      h2{
+        font-size: 20px;
+      }
+      .info{
+        height: 180px;
+        top:55%;
+        width:80%;
+        .button{
+          font-size: 12px;
+          border-radius: 3px;
+          letter-spacing: 0.8px;
+          height:20px;
+        }
+      }
+    }
+  }
+
+  aside{
+    font-size: 10px;
+    i{
+      padding:5px;
+    }
+  }
+  footer{
+    font-size: 15px;
   }
 }
