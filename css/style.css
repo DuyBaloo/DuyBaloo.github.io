@@ -465,7 +465,9 @@ footer {
       height: 50px;
       left: 30%; }
     .about .about-body .about-left {
-      top: 76%; }
+      top: 80%; }
+    .about .about-body .about-right {
+      top: 88%; }
     .about .about-body p {
       font-size: 12px;
       padding-top: 3px; }
@@ -473,7 +475,8 @@ footer {
   .skills .skills-body {
     height: 100%; }
     .skills .skills-body h1 {
-      padding: 150px 0 40px 0; }
+      padding: 150px 0 40px 0;
+      font-size: 18px; }
     .skills .skills-body .left, .skills .skills-body .right {
       float: none;
       width: 100%;
@@ -487,14 +490,15 @@ footer {
   .contact {
     width: 100%; }
     .contact h1 {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.2; }
     .contact .container h2 {
-      font-size: 20px; }
+      font-size: 18px; }
     .contact .container .info {
       height: 180px;
       top: 55%;
-      width: 80%; }
+      width: 80%;
+      font-size: 15px; }
       .contact .container .info .button {
         font-size: 12px;
         border-radius: 3px;
@@ -502,11 +506,14 @@ footer {
         height: 20px; }
 
   aside {
-    font-size: 10px; }
+    font-size: 10px;
+    margin: 0; }
     aside i {
       padding: 5px; }
 
   footer {
-    font-size: 15px; } }
+    font-size: 15px;
+    height: 50px;
+    padding: 15px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -632,7 +632,10 @@ footer{
         left:30%;
       }
       .about-left{
-        top: 76%;
+        top: 80%;
+      }
+      .about-right{
+        top: 88%;
       }
       p{
         font-size:12px;
@@ -646,6 +649,7 @@ footer{
       height:100%;
       h1{
         padding: 150px 0 40px 0;
+        font-size: 18px;
       }
       .left,.right{
         float: none;
@@ -663,18 +667,19 @@ footer{
   }
   .contact{
     h1{
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.2;
     }
     width:100%;
     .container{
       h2{
-        font-size: 20px;
+        font-size: 18px;
       }
       .info{
         height: 180px;
         top:55%;
         width:80%;
+        font-size: 15px;
         .button{
           font-size: 12px;
           border-radius: 3px;
@@ -687,11 +692,14 @@ footer{
 
   aside{
     font-size: 10px;
+    margin:0;
     i{
       padding:5px;
     }
   }
   footer{
     font-size: 15px;
+    height:50px;
+    padding: 15px;
   }
 }

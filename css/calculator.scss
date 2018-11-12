@@ -15,7 +15,10 @@
   box-sizing: border-box;
 }
 body{
-  background-image: linear-gradient(to right,#1D2B64, #F8CDDA);
+  background: #1FA2FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom left,#1FA2FF, #12D8FA, #A6FFCB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom left, #1FA2FF, #12D8FA, #A6FFCB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   height: 100vh;
   margin:0;
 }
@@ -56,13 +59,27 @@ form{
   grid-template-rows: minmax(70px, auto);
   grid-gap:5px;
   padding:3px;
-
-  .equal{
-    grid-row:5;
-    grid-column: 4;
-  }
+  //
+  //
+  //.plus {
+  //  grid-column: 4;
+  //  grid-row:3 / 4;
+  //}
+  //.zero {
+  //  grid-row: 5;
+  //  grid-column: 1 / 2;
+  //}
+  //
+  //.dot{
+  //  grid-column: 3;
+  //  grid-row:5;
+  //}
+  //.equal{
+  //  grid-row:5;
+  //  grid-column: 4;
+  //}
   .button {
-    background: #af6936;
+    background: #003500;
     font-weight: bold;
     color: #ffffff;
     font-family: myfont, sans-serif;
@@ -72,19 +89,7 @@ form{
 
       width:70px;
       height:70px;
-    .plus {
-      grid-row:3 / 4;
-      grid-column: 4;
-    }
-    .zero {
-      grid-row: 5;
-      grid-column: 1 / 2;
-    }
 
-    .dot{
-      grid-column: 3;
-      grid-row:5;
-    }
   }
   .button:hover{
     background: #000;
