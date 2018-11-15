@@ -138,10 +138,7 @@ span {
         color: #af6936; }
 
 .about {
-  background: url("../img/aboutbackground.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background: #000;
   width: 100%;
   margin: auto;
   position: relative;
@@ -159,26 +156,36 @@ span {
     position: absolute;
     display: block;
     text-align: center;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 10px; }
+    .about .about-body img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      margin-top: 20px; }
     .about .about-body a {
       text-decoration: none;
       color: #fff; }
       .about .about-body a:visited {
         color: #fff; }
     .about .about-body p {
+      color: #fff;
+      font-size: 25px;
+      padding: 30px 220px; }
+    .about .about-body h1 {
+      text-align: center;
+      padding: 40px 40px 0 40px;
+      font-size: 40px;
+      color: #fff;
+      font-weight: lighter; }
+    .about .about-body .about-left p, .about .about-body .about-right p {
       -webkit-transform: translateY(90%);
       -moz-transform: translateY(90%);
       -ms-transform: translateY(90%);
       -o-transform: translateY(90%);
       transform: translateY(90%);
-      font-size: 20px; }
-    .about .about-body h1 {
-      text-align: center;
-      padding: 40px;
-      font-size: 40px;
-      color: #fff;
-      font-weight: lighter; }
+      font-size: 20px;
+      padding: 0; }
     .about .about-body .about-left {
       position: absolute;
       float: left;
@@ -287,7 +294,7 @@ span {
       position: absolute;
       height: 4px;
       background: #12bd1f;
-      width: 55%;
+      width: 45%;
       border-radius: 3px; }
     .skills .skills-body .react {
       position: absolute;
@@ -334,7 +341,7 @@ aside {
   .contact .info {
     width: 600px;
     height: 250px;
-    top: 43%;
+    top: 200px;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -377,7 +384,11 @@ footer {
       color: #9e9e9e; }
 
 @media (max-width: 1450px) {
+  section {
+    height: 1000px; }
+
   .skills .skills-body {
+    height: 100%;
     max-width: 75%;
     margin: 0 auto; }
     .skills .skills-body h1 {
@@ -406,10 +417,13 @@ footer {
     -ms-transform: translate(-50%, 13%);
     -o-transform: translate(-50%, 13%);
     transform: translate(-50%, 13%); }
+    .about .about-body p {
+      font-size: 22px;
+      padding: 70px; }
     .about .about-body .about-left {
       float: none;
       width: 50%;
-      top: 74%;
+      top: 75%;
       left: 25%;
       border-radius: 5px; }
     .about .about-body .about-right {
@@ -431,7 +445,7 @@ footer {
     font-size: 28px; } }
 @media (max-width: 600px) {
   section {
-    height: 140vh; }
+    height: 800px; }
 
   #intro {
     height: 100vh; }
@@ -456,26 +470,34 @@ footer {
       height: 50px;
       font-size: 15px; }
 
-  .about .about-body {
-    min-width: 75%; }
-    .about .about-body h1 {
-      font-size: 30px; }
-    .about .about-body .about-left, .about .about-body .about-right {
-      width: 40%;
-      height: 50px;
-      left: 30%; }
-    .about .about-body .about-left {
-      top: 80%; }
-    .about .about-body .about-right {
-      top: 88%; }
-    .about .about-body p {
-      font-size: 12px;
-      padding-top: 3px; }
+  .about {
+    height: 700px; }
+    .about .about-body {
+      min-width: 75%; }
+      .about .about-body img {
+        width: 120px;
+        height: 120px; }
+      .about .about-body p {
+        font-size: 15px;
+        padding: 40px 30px; }
+      .about .about-body h1 {
+        font-size: 25px; }
+      .about .about-body .about-left, .about .about-body .about-right {
+        width: 40%;
+        height: 50px;
+        left: 30%; }
+        .about .about-body .about-left p, .about .about-body .about-right p {
+          font-size: 12px;
+          padding-top: 3px; }
+      .about .about-body .about-left {
+        top: 79%; }
+      .about .about-body .about-right {
+        top: 88%; }
 
   .skills .skills-body {
     height: 100%; }
     .skills .skills-body h1 {
-      padding: 150px 0 40px 0;
+      padding: 100px 0 40px 0;
       font-size: 18px; }
     .skills .skills-body .left, .skills .skills-body .right {
       float: none;
@@ -488,6 +510,7 @@ footer {
           margin-bottom: 10px; }
 
   .contact {
+    height: 300px;
     width: 100%; }
     .contact h1 {
       font-size: 18px;
@@ -512,7 +535,7 @@ footer {
       padding: 5px; }
 
   footer {
-    font-size: 15px;
+    font-size: 13px;
     height: 50px;
     padding: 15px; } }
 

@@ -200,10 +200,11 @@ span{
 
 //About section introducing
 .about{
-  background: url('../img/aboutbackground.jpg')no-repeat;
-  background-size:cover;
-  background-attachment:fixed;
-  background-position:center;
+  //background: url('../img/aboutbackground.jpg')no-repeat;
+  //background-size:cover;
+  //background-attachment:fixed;
+  //background-position:center;
+  background: #000;
   width:100%;
   margin:auto;
   position:relative;
@@ -221,9 +222,15 @@ span{
     position:absolute;
     display:block;
     text-align: center;
-    background:rgba(255,255,255,.5);
+    background:rgba(255,255,255,.2);
     border-radius:10px;
 
+    img{
+      border-radius: 50%;
+      width:180px;
+      height:180px;
+      margin-top: 20px;
+    }
     a{
       text-decoration: none;
       color:#fff;
@@ -232,23 +239,30 @@ span{
       }
     }
     p{
-      -webkit-transform: translateY(90%);
-      -moz-transform: translateY(90%);
-      -ms-transform: translateY(90%);
-      -o-transform: translateY(90%);
-      transform: translateY(90%);
-      font-size:20px;
+      color: #fff;
+      font-size:25px;
+      padding: 30px 220px;
     }
 
     h1{
       text-align: center;
-      padding:40px;
+      padding:40px 40px 0 40px;
       font-size: 40px;
       color:#fff;
       font-weight: lighter;
     }
 
-
+    .about-left, .about-right{
+      p {
+        -webkit-transform: translateY(90%);
+        -moz-transform: translateY(90%);
+        -ms-transform: translateY(90%);
+        -o-transform: translateY(90%);
+        transform: translateY(90%);
+        font-size: 20px;
+        padding: 0;
+      }
+    }
     .about-left{
       position:absolute;
       float:left;
@@ -377,7 +391,7 @@ span{
       position:absolute;
       height:4px;
       background:$skill-item;
-      width:55%;
+      width:45%;
       border-radius: 3px;
     }
     .react{
@@ -417,6 +431,8 @@ aside{
     }
   }
 }
+
+//contact section
 .contact{
   height:50vh;
   background: #232323;
@@ -436,7 +452,7 @@ aside{
   .info{
     width:600px;
     height:250px;
-    top:43%;
+    top:200px;
     left:50%;
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
@@ -489,9 +505,14 @@ footer{
   }
 }
 
+//setting for tablets
 @media (max-width:1450px) {
+  section{
+    height:1000px;
+  }
   .skills{
     .skills-body{
+      height:100%;
       max-width:75%;
       margin: 0 auto;
       h1{
@@ -541,10 +562,14 @@ footer{
       -ms-transform: translate(-50%,13%);
       -o-transform: translate(-50%,13%);
       transform: translate(-50%,13%);
+      p{
+        font-size: 22px;
+        padding: 70px;
+      }
       .about-left{
         float: none;
         width:50%;
-        top:74%;
+        top:75%;
         left:25%;
         border-radius: 5px;
       }
@@ -576,9 +601,10 @@ footer{
   }
 }
 
+//setting for phone devices
 @media(max-width: 600px){
   section{
-    height:140vh;
+    height:800px;
   }
   #intro{
     height:100vh;
@@ -621,26 +647,36 @@ footer{
   }
 
   .about{
+    height: 700px;
     .about-body{
       min-width: 75%;
+      img{
+        width:120px;
+        height:120px;
+      }
+      p{
+        font-size: 15px;
+        padding: 40px 30px;
+      }
       h1{
-        font-size:30px;
+        font-size:25px;
         }
       .about-left,.about-right{
         width: 40%;
         height:50px;
         left:30%;
+        p{
+          font-size:12px;
+          padding-top:3px;
+        }
       }
       .about-left{
-        top: 80%;
+        top: 79%;
       }
       .about-right{
         top: 88%;
       }
-      p{
-        font-size:12px;
-        padding-top:3px;
-      }
+
     }
   }
 
@@ -648,7 +684,7 @@ footer{
     .skills-body{
       height:100%;
       h1{
-        padding: 150px 0 40px 0;
+        padding: 100px 0 40px 0;
         font-size: 18px;
       }
       .left,.right{
@@ -666,6 +702,7 @@ footer{
     }
   }
   .contact{
+    height: 300px;
     h1{
       font-size: 18px;
       line-height: 1.2;
@@ -698,7 +735,7 @@ footer{
     }
   }
   footer{
-    font-size: 15px;
+    font-size: 13px;
     height:50px;
     padding: 15px;
   }
