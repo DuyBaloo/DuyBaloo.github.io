@@ -108,7 +108,8 @@ span {
     text-align: center;
     font-size: 15px; }
     .nav-bar .left a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #9e9e9e; }
       .nav-bar .left a:visited {
         color: #9e9e9e; }
     .nav-bar .left h1 {

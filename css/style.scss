@@ -149,6 +149,7 @@ span{
   .left {
     a{
       text-decoration: none;
+      color:$text;
       &:visited{
         color:$text;
       }
