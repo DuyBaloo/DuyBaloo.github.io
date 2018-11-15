@@ -121,11 +121,11 @@ section{
       }
     }
     .container{
-      height:70%;
       .grid-items{
         grid-template-columns: repeat(1, 280px);
         top: 300px;
         height: 180px;
+        margin-bottom: 10px;
         .item{
           height:180px;
           img{
@@ -133,6 +133,7 @@ section{
 
           }
           p{
+            font-size:15px;
             opacity: 1;
           }
         }

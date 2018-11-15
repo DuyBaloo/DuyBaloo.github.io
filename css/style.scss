@@ -7,7 +7,7 @@ $text-nav:#24457e;
 $nav-bar:#003500;
 $background1:#35001E;
 $background2:#0D0600;
-$skill-item: #12bd1f;
+$skill-item: #e7e4b2;
 $skill:#009d3a;
 
 //getting the font
@@ -41,7 +41,7 @@ section{
 
 //styling the span
 span{
-  color:$span;
+  color:$nav-bar;
 }
 
 //for easier navigation
@@ -83,7 +83,7 @@ span{
         position:absolute;
         color:$text;
         &:hover{
-          color:$span;
+          color:$nav-bar;
           transition:1s;
         }
       }
@@ -108,7 +108,7 @@ span{
         -moz-animation: reveal 2s normal forwards;
         -o-animation: reveal 2s normal forwards;
         animation: reveal 2s normal forwards;
-        color:$text;
+        color:#fff;
       }
     }
   }
@@ -142,7 +142,7 @@ span{
   position: fixed;
   height: 80px;
   width: 100%;
-  background: $nav-bar;
+  background: #232323;
   display: inline-block;
   z-index: 1;
   transition: 1s;
@@ -189,7 +189,7 @@ span{
       }
       &:hover {
         a{
-          color: $background;
+          color: $nav-bar;
         }
 
       }
@@ -200,7 +200,7 @@ span{
 
 //About section introducing
 .about{
-  //background: url('../img/aboutbackground.jpg')no-repeat;
+  //background: url('../img/about.jpg')no-repeat;
   //background-size:cover;
   //background-attachment:fixed;
   //background-position:center;
@@ -253,6 +253,17 @@ span{
     }
 
     .about-left, .about-right{
+      background:#000;
+      border-radius: 5px;
+      height:70px;
+      width:200px;
+      top:80%;
+      &:hover{
+        background:$text;
+        p{
+          color: $nav-bar;
+        }
+      }
       p {
         -webkit-transform: translateY(90%);
         -moz-transform: translateY(90%);
@@ -267,30 +278,12 @@ span{
       position:absolute;
       float:left;
       left:25%;
-      top:80%;
-      height:70px;
-      width:200px;
-      background:#020e18;
-      border-radius: 5px;
-      &:hover{
-        background:$background;
-        color:$text;
-        }
       }
     }
     .about-right{
       position:absolute;
       float:right;
-      top:80%;
       left:58%;
-      height:70px;
-      width:200px;
-      background:#020e18;
-      border-radius: 5px;
-      &:hover{
-        background:$background;
-        color:$text;
-      }
     }
   }
 
@@ -308,7 +301,7 @@ span{
     height:100vh;
     width:800px;
     text-align: center;
-    background: rgba(0, 40, 40, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     margin:0 auto;
     h1{
       color:#f9f9f9;
@@ -316,7 +309,7 @@ span{
     }
     h3{
       margin: 0 0 20px 0;
-      color:$span;
+      color:#fff;
     }
 
     .skill-item{
@@ -335,7 +328,7 @@ span{
       border: 1px solid rgba(255,255,255,.5);
       border-radius: 3px;
       overflow: hidden;
-      box-shadow: 0 0 10px 2px #2187e7;
+      box-shadow: 0 0 10px 2px $text;
       position:absolute;
     }
     .html{
@@ -474,8 +467,8 @@ aside{
       width:30%;
       border-radius: 5px;
       &:hover{
-        background: $nav-bar;
-        color:$span;
+        background: #fff;
+        color:#000;
       }
     }
     input, textarea{
@@ -489,18 +482,18 @@ aside{
 
 //footer of the page
 footer{
-  background:$nav-bar;
+  background:#000;
   height:60px;
   text-align: center;
   padding:20px;
   a{
-    color:$span;
+    color:$nav-bar;
     text-decoration: none;
     &:visited{
-      color:$span;
+      color: $nav-bar;
     }
     &:hover{
-      color:$text;
+      color: $text;
     }
   }
 }

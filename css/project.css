@@ -80,17 +80,17 @@ section {
     padding: 60px 0 0 0; }
     section .text h2 {
       font-size: 25px; }
-  section .container {
-    height: 70%; }
-    section .container .grid-items {
-      grid-template-columns: repeat(1, 280px);
-      top: 300px;
+  section .container .grid-items {
+    grid-template-columns: repeat(1, 280px);
+    top: 300px;
+    height: 180px;
+    margin-bottom: 10px; }
+    section .container .grid-items .item {
       height: 180px; }
-      section .container .grid-items .item {
-        height: 180px; }
-        section .container .grid-items .item img {
-          width: 280px; }
-        section .container .grid-items .item p {
-          opacity: 1; } }
+      section .container .grid-items .item img {
+        width: 280px; }
+      section .container .grid-items .item p {
+        font-size: 15px;
+        opacity: 1; } }
 
 /*# sourceMappingURL=project.css.map */
