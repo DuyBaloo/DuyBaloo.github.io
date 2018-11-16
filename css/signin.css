@@ -1,15 +1,8 @@
-@font-face {
-  font-family: myfont;
-  src: url("../Font/GothamBook.ttf"); }
-@font-face {
-  font-family: myfont;
-  src: url("../Font/gothambold.ttf");
-  font-weight: bold; }
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: myfont, sans-serif; }
+  font-family: 'Heebo', sans-serif; }
 
 .signBody {
   height: 100vh;

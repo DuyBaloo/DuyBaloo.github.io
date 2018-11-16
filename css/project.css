@@ -1,13 +1,6 @@
-@font-face {
-  font-family: myfont;
-  src: url("../Font/GothamBook.ttf"); }
-@font-face {
-  font-family: myfont;
-  src: url("../Font/gothambold.ttf");
-  font-weight: bold; }
 * {
   margin: 0;
-  font-family: myfont, sans-serif;
+  font-family: 'Heebo', sans-serif;
   box-sizing: border-box; }
 
 section {
@@ -26,10 +19,6 @@ section {
       position: absolute;
       left: 50%;
       top: 70%;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       display: grid;
       grid-template-columns: repeat(2, 400px);
@@ -76,7 +65,8 @@ section {
         opacity: 1; } }
 @media (max-width: 450px) {
   section .text {
-    height: 20%;
+    max-height: 150px;
+    width: 100%;
     padding: 60px 0 0 0; }
     section .text h2 {
       font-size: 25px; }

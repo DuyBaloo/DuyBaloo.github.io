@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de1cf3ed-909a-4f47-96ce-c5e43c0ca625" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/calculator.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/calculator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/calculator.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/calculator.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/calculator.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/calculator.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/project.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/project.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/signin.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/signin.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/signin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/signin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/wordTyper.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/wordTyper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/wordTyper.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/wordTyper.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/wordTyper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/wordTyper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signinform.html" beforeDir="false" afterPath="$PROJECT_DIR$/signinform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordtyper.html" beforeDir="false" afterPath="$PROJECT_DIR$/wordtyper.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,15 +37,15 @@
     <session id="27919536">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
+          <entry key="project.closed" value="34" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="13" />
-          <entry key="project.open.time.6" value="8" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="14" />
+          <entry key="project.open.time.6" value="9" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,7 +53,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="3" />
           <entry key="js" value="4" />
-          <entry key="scss" value="20" />
+          <entry key="scss" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -41,34 +61,34 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="3" />
           <entry key="JavaScript" value="4" />
-          <entry key="SCSS" value="20" />
+          <entry key="SCSS" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="5" />
           <entry key="js" value="2316" />
-          <entry key="scss" value="23031" />
+          <entry key="scss" value="23584" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="5" />
           <entry key="JavaScript" value="2316" />
-          <entry key="SCSS" value="23031" />
+          <entry key="SCSS" value="23584" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="151" column="18" selection-start-line="151" selection-start-column="18" selection-end-line="151" selection-end-column="18" />
+            <state relative-caret-position="399">
+              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
               <folding>
-                <marker date="1542301322170" expanded="true" signature="787:836" ph="..." />
+                <marker date="1542332264777" expanded="true" signature="613:658" ph="..." />
               </folding>
             </state>
           </provider>
@@ -77,8 +97,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/project.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2184">
-              <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+            <state relative-caret-position="126">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/signin.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/wordTyper.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/calculator.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -104,16 +151,16 @@
         <option value="$PROJECT_DIR$/css/_calculator.scss" />
         <option value="$PROJECT_DIR$/css/photogrid.scss" />
         <option value="$PROJECT_DIR$/css/layer.scss" />
-        <option value="$PROJECT_DIR$/css/signin.scss" />
         <option value="$PROJECT_DIR$/js/aos.js" />
         <option value="$PROJECT_DIR$/css/todoList.scss" />
         <option value="$PROJECT_DIR$/js/todoList.js" />
         <option value="$PROJECT_DIR$/js/wordTyper.js" />
-        <option value="$PROJECT_DIR$/css/wordTyper.scss" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/calculator.scss" />
         <option value="$PROJECT_DIR$/css/project.scss" />
         <option value="$PROJECT_DIR$/css/style.scss" />
+        <option value="$PROJECT_DIR$/css/calculator.scss" />
+        <option value="$PROJECT_DIR$/css/signin.scss" />
+        <option value="$PROJECT_DIR$/css/wordTyper.scss" />
       </list>
     </option>
   </component>
@@ -133,6 +180,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,7 +208,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,18 +270,22 @@
       <workItem from="1542239303869" duration="3755000" />
       <workItem from="1542256703464" duration="2925000" />
       <workItem from="1542259822896" duration="449000" />
-      <workItem from="1542301303898" duration="19000" />
+      <workItem from="1542301303898" duration="504000" />
+      <workItem from="1542302797033" duration="556000" />
+      <workItem from="1542303863987" duration="1539000" />
+      <workItem from="1542311630102" duration="7386000" />
+      <workItem from="1542330809486" duration="1377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134800000" />
+    <option name="totallyTimeSpent" value="146143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="936" y="0" width="991" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3557188" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3557188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -270,13 +321,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/fcalculator.scss" />
     <entry file="file://$PROJECT_DIR$/css/photogrid.scss" />
-    <entry file="file://$PROJECT_DIR$/css/signin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/layer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -322,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/wordTyper.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="846">
@@ -336,27 +373,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/calculator.scss">
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-766">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="399">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding>
+            <marker date="1542332264777" expanded="true" signature="613:658" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/css/calculator.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="151" column="18" selection-start-line="151" selection-start-column="18" selection-end-line="151" selection-end-column="18" />
-          <folding>
-            <marker date="1542301322170" expanded="true" signature="787:836" ph="..." />
-          </folding>
+        <state relative-caret-position="116">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/project.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+        <state relative-caret-position="126">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/signin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/wordTyper.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>

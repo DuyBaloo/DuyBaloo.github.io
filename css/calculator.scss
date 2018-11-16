@@ -1,15 +1,3 @@
-//getting the font
-@font-face {
-  font-family: myfont;
-  src: url('../Font/GothamBook.ttf');
-}
-
-//format bold style
-@font-face {
-  font-family: myfont;
-  src: url('../Font/gothambold.ttf');
-  font-weight: bold;
-}
 
 *{
   box-sizing: border-box;
@@ -19,6 +7,7 @@ body{
   background: -webkit-linear-gradient(to bottom left,#1FA2FF, #12D8FA, #A6FFCB);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom left, #1FA2FF, #12D8FA, #A6FFCB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+  font-family: 'Heebo', sans-serif;
   height: 100vh;
   margin:0;
 }

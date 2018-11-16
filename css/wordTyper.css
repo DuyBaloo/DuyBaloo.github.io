@@ -1,14 +1,7 @@
-@font-face {
-  font-family: myfont;
-  src: url("../Font/GothamBook.ttf"); }
-@font-face {
-  font-family: myfont;
-  src: url("../Font/gothambold.ttf");
-  font-weight: bold; }
 * {
   margin: 0;
   padding: 0;
-  font-family: myfont, sans-serif;
+  font-family: 'Heebo', sans-serif;
   box-sizing: border-box; }
 
 body {
