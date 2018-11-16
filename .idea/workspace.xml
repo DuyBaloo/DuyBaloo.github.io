@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de1cf3ed-909a-4f47-96ce-c5e43c0ca625" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/project.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/project.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/project.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/signin.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/signin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/signin.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/signin.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/signin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/signin.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/wordTyper.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/wordTyper.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/wordTyper.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/wordTyper.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/wordTyper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/wordTyper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/aboutbackground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/css.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/html.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/illustrator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/javascript.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/jquery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/me.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/nodejs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/photoshop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/react.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/skillbackground.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ver 2.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,7 +49,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="3" />
           <entry key="js" value="4" />
-          <entry key="scss" value="26" />
+          <entry key="scss" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -54,7 +57,7 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="3" />
           <entry key="JavaScript" value="4" />
-          <entry key="SCSS" value="26" />
+          <entry key="SCSS" value="27" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -75,14 +78,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="159" column="23" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="23" />
+            <state relative-caret-position="-360">
+              <caret line="172" column="27" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
               <folding>
                 <marker date="1542338615427" expanded="true" signature="637:682" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/signin.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -232,12 +244,12 @@
       <workItem from="1542303863987" duration="1539000" />
       <workItem from="1542311630102" duration="7386000" />
       <workItem from="1542330809486" duration="2537000" />
-      <workItem from="1542333863508" duration="2844000" />
+      <workItem from="1542333863508" duration="3450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150147000" />
+    <option name="totallyTimeSpent" value="150753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="936" y="0" width="991" height="1047" extended-state="0" />
@@ -345,13 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/signin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/project.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -361,11 +366,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="159" column="23" selection-start-line="159" selection-start-column="23" selection-end-line="159" selection-end-column="23" />
+        <state relative-caret-position="-360">
+          <caret line="172" column="27" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
           <folding>
             <marker date="1542338615427" expanded="true" signature="637:682" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/signin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
         </state>
       </provider>
     </entry>
