@@ -6,13 +6,14 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Heebo', sans-serif;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  letter-spacing: 1.2px; }
 
 section {
   height: 100vh; }
 
 span {
-  color: #003500; }
+  color: #009d3a; }
 
 .hidden {
   opacity: 0;
@@ -106,7 +107,7 @@ span {
         color: #9e9e9e;
         text-transform: uppercase; }
       .nav-bar .right li:hover a {
-        color: #003500; }
+        color: #009d3a; }
 
 .about {
   background: #000;
@@ -287,6 +288,17 @@ aside {
   background: #232323;
   position: relative;
   text-align: center; }
+  .contact a {
+    text-decoration: none;
+    color: #9e9e9e; }
+    .contact a i {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 30px; }
+      .contact a i:hover {
+        color: #fff; }
+    .contact a:visited {
+      color: #9e9e9e; }
   .contact h1 {
     position: absolute;
     top: 10%;
@@ -327,16 +339,19 @@ footer {
   text-align: center;
   padding: 20px; }
   footer a {
-    color: #003500;
+    color: #009d3a;
     text-decoration: none; }
     footer a:visited {
-      color: #003500; }
+      color: #009d3a; }
     footer a:hover {
       color: #9e9e9e; }
 
 @media (max-width: 1450px) {
   section {
     height: 1000px; }
+
+  #intro {
+    background-attachment: unset; }
 
   .skills .skills-body {
     height: 100%;
@@ -385,6 +400,8 @@ footer {
   aside {
     font-size: 15px; }
 
+  .contact a i {
+    font-size: 40px; }
   .contact h1 {
     font-size: 24px; }
   .contact .container {
@@ -397,8 +414,9 @@ footer {
     height: 800px; }
 
   #intro {
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
+    background-attachment: unset;
     width: 100%; }
     #intro .img .text h1 {
       font-size: 25px;
@@ -463,6 +481,9 @@ footer {
   .contact {
     height: 300px;
     width: 100%; }
+    .contact a i {
+      padding-bottom: 10px;
+      font-size: 20px; }
     .contact h1 {
       font-size: 18px;
       line-height: 1.2; }

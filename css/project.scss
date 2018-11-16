@@ -6,6 +6,7 @@ $span:#be6628;
   margin:0;
   font-family: 'Heebo', sans-serif;
   box-sizing: border-box;
+  letter-spacing: 1.2px;
 }
 section{
   height:100vh;
@@ -24,10 +25,6 @@ section{
       position:absolute;
       left:50%;
       top:70%;
-      //-webkit-transform: translate(-50%,-50%);
-      //-moz-transform: translate(-50%,-50%);
-      //-ms-transform: translate(-50%,-50%);
-      //-o-transform: translate(-50%,-50%);
       transform: translate(-50%,-50%);
       display: grid;
       grid-template-columns: repeat(2, 400px);

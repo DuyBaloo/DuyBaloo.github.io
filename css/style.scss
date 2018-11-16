@@ -8,7 +8,7 @@ $nav-bar:#003500;
 $background1:#35001E;
 $background2:#0D0600;
 $skill-item: #e7e4b2;
-$skill:#009d3a;
+$skill: #009d3a;
 
 //global settings
 html{
@@ -21,6 +21,7 @@ html{
   padding:0;
   font-family: 'Heebo', sans-serif;
   box-sizing: border-box;
+  letter-spacing: 1.2px;
 }
 
 section{
@@ -29,7 +30,7 @@ section{
 
 //styling the span
 span{
-  color:$nav-bar;
+  color:$skill;
 }
 
 //for easier navigation
@@ -156,7 +157,7 @@ span{
       }
       &:hover {
         a{
-          color: $nav-bar;
+          color: $skill;
         }
 
       }
@@ -392,6 +393,21 @@ aside{
   background: #232323;
   position:relative;
   text-align: center;
+  a{
+    text-decoration: none;
+    color: $text;
+    i{
+      position:absolute;
+      bottom:0;
+      padding-bottom: 30px;
+      &:hover{
+        color:#fff;
+      }
+    }
+    &:visited{
+      color:$text;
+    }
+  }
   h1{
     position:absolute;
     top:10%;
@@ -440,10 +456,10 @@ footer{
   text-align: center;
   padding:20px;
   a{
-    color:$nav-bar;
+    color:$skill;
     text-decoration: none;
     &:visited{
-      color: $nav-bar;
+      color: $skill;
     }
     &:hover{
       color: $text;
@@ -455,6 +471,9 @@ footer{
 @media (max-width:1450px) {
   section{
     height:1000px;
+  }
+  #intro{
+    background-attachment: unset;
   }
   .skills{
     .skills-body{
@@ -531,6 +550,11 @@ footer{
     font-size:15px;
   }
   .contact{
+    a{
+      i{
+        font-size:40px;
+      }
+    }
     h1{
       font-size: 24px;
     }
@@ -550,8 +574,9 @@ footer{
     height:800px;
   }
   #intro{
-    height:100vh;
+    height:80vh;
     background-size: cover;
+    background-attachment: unset;
     width:100%;
     .img{
       .text{
@@ -648,6 +673,12 @@ footer{
   }
   .contact{
     height: 300px;
+    a{
+      i{
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+    }
     h1{
       font-size: 18px;
       line-height: 1.2;

@@ -7,14 +7,14 @@ $nav-bar:#003500;
   padding:0;
   font-family: 'Heebo', sans-serif;
   box-sizing: border-box;
+  letter-spacing: 1.2px;
 }
 
 body{
   height:100vh;
-  background: #56ab2f;  /* fallback for old browsers */
+  background: #56ab2f no-repeat;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top right, #56ab2f 30%, #a8e063);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top right, #56ab2f 30%, #a8e063); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 
 
 }
@@ -38,10 +38,6 @@ body{
       position: absolute;
       left:50%;
       top:10%;
-      -webkit-transform: translateX(-50%);
-      -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      -o-transform: translateX(-50%);
       transform: translateX(-50%);
     }
     #second{
@@ -64,11 +60,7 @@ body{
       position: absolute;
       width: 400px;
       left:50%;
-      top:60%;
-      -webkit-transform: translate(-50%,-50%);
-      -moz-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-      -o-transform: translate(-50%,-50%);
+      top:600px;
       transform: translate(-50%,-50%);
       font-size:20px;
     }
