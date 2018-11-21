@@ -40,7 +40,7 @@ body {
     .container .intro input {
       border-radius: 5px;
       height: 40px;
-      min-width: 500px;
+      width: 500px;
       text-indent: 15px; }
     .container .intro .counter {
       padding: 40px; }
@@ -51,5 +51,40 @@ body {
       top: 600px;
       transform: translate(-50%, -50%);
       font-size: 20px; }
+
+@media (max-width: 900px) {
+  body {
+    height: 100vh; }
+
+  .container .intro {
+    padding: 100px 50px; }
+    .container .intro input {
+      width: 300px; }
+    .container .intro .instruction {
+      width: 300px; } }
+@media (max-width: 500px) {
+  body {
+    height: 100vh; }
+
+  .lighter {
+    height: 40px;
+    padding: 3px; }
+    .lighter h1 {
+      font-size: 25px; }
+
+  .container .intro {
+    padding: 30px 50px; }
+    .container .intro .wordDisplay {
+      font-size: 40px;
+      padding: 15px 30px; }
+    .container .intro input {
+      width: 200px; }
+    .container .intro #message {
+      top: 40px; }
+    .container .intro .instruction {
+      width: 300px;
+      top: 450px; }
+      .container .intro .instruction p {
+        font-size: 14px; } }
 
 /*# sourceMappingURL=wordTyper.css.map */
