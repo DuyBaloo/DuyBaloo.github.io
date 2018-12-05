@@ -1,156 +1,201 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
- "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome to My Website</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/aos.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  <script src="./js/aos.js"></script>
-  <script src="./js/navbar.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Heebo:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
   <section id="intro">
     <div class="img">
       <div class="text">
-        <h1 class="animate1">Hi, I'm <span class="highlight">Duy</span> Nguyen</h1>
-        <h1 class="animate2">A Front End <span class="highlight">Developer</span></h1>
+        <h1 class="animate1 h1">Hi, I'm <span class="highlight">Duy</span> Nguyen</h1>
+        <h1 class="animate2 h1">A Front End <span class="highlight">Developer</span></h1>
         <a href="#about"><i class="fas fa-arrow-circle-down fa-2x"></i></a>
       </div>
     </div>
   </section>
 
-  <div class="nav-bar">
-    <div class="left">
-      <h1><a href="index.html"><span>Duy Nguyen</span> Portfolio</a></h1>
-    </div>
-    <ul class="right">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#info">Contacts</a></li>
-    </ul>
-  </div>
+  <nav id="spy" class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:#232323">
+    <div class="container">
+      <strong><a class="navbar-brand" href="index.html"><span>DUY NGUYEN</span> PORTFOLIO</a></strong>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <section class="about">
-    <h5 class="hidden"><a name="about">asd</a></h5>
-    <div class="about-body">
-      <h1>About Me</h1>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info">CONTACTS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about" id="about">
+    <div class="jumbotron">
+      <strong><h1>About Me</h1></strong>
       <img src="./img/me.jpg" alt="me">
-      <p>I like building websites and applications. Always keeping in mind that my designs should be consistent and responsive to be compatible
+      <p class="lead">I like building websites and applications. Always keeping in mind that my designs should be consistent and responsive to be compatible
       with all kind of devices. I love challenges and always strive for better results.
       </p>
-      <a href="projects.html" target="_blank">
-        <div class="about-left">
-          <p>My Projects</p>
-        </div>
-      </a>
-      <a href="https://docs.google.com/document/d/1CP97IeJeTOkyIBPiV4BXje3y3q8Fwc4TtmDBXw9UnAs/edit?usp=sharing" target="_blank">
-        <div class="about-right">
-          <p>Resumé</p>
-        </div>
-      </a>
     </div>
   </section>
 
   <section class="skills">
-    <h5 class="hidden"><a name="skills">asd</a></h5>
-    <div class="skills-body">
-      <h1><a ></a>SKILLS</h1>
-      <div data-aos="fade-right">
-        <div class="left">
-          <li class="skill-item">
-            <h3>HTML</h3>
-            <div class="bar"></div>
-            <div class="html"></div>
-          </li>
-          <li class="skill-item">
-            <h3>CSS/LESS/SASS</h3>
-            <div class="bar"></div>
-            <div class="style"></div>
-          </li>
-          <li class="skill-item">
-            <h3>JAVASCRIPT/ES6+</h3>
-            <div class="bar"></div>
-            <div class="item3"></div>
-          </li>
-          <li class="skill-item">
-            <h3>ANGULAR</h3>
-            <div class="bar"></div>
-            <div class="react"></div>
-          </li>
-          <li class="skill-item">
-            <h3>GIT/GITHUB</h3>
-            <div class="bar"></div>
-            <div class="git"></div>
-          </li>
-
+    <div class="container">
+      <div class="row" id="skills" >
+        <div class="col-lg-6 col-sm-12">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Programming</h3>
+          <p class="lead">I create websites from scratch or translate designs from PSDs. Tweak little details when necessary.</p>
+          <h4>Languages/ Libraries/ Frameworks</h4>
+          <ul>
+            <li class="lead">HTML</li>
+            <li class="lead">CSS/Less/Sass</li>
+            <li class="lead">JavaScript</li>
+            <li class="lead">JQuery</li>
+            <li class="lead">BootStrap</li>
+            <li class="lead">NodeJS</li>
+          </ul>
         </div>
-        <div class="right">
-          <li class="skill-item">
-            <h3>JQUERY</h3>
-            <div class="bar"></div>
-            <div class="jquery"></div>
-          </li>
-          <li class="skill-item">
-            <h3>PHOTOSHOP</h3>
-            <div class="bar"></div>
-            <div class="photoshop"></div>
-          </li>
-          <li class="skill-item">
-            <h3>ILLUSTRATOR</h3>
-            <div class="bar"></div>
-            <div class="illustrator"></div>
-          </li>
-          <li class="skill-item">
-            <h3>WORDPRESS</h3>
-            <div class="bar"></div>
-            <div class="wordpress"></div>
-          </li>
+        <div class="col-lg-6 col-sm-12">
+          <i class="fas fa-ruler-combined"></i>
+          <h3>Tools I use</h3>
+          <p class="lead">These help me with my job and maximize productivity.</p>
+          <h4>Dev Tools</h4>
+          <ul>
+            <li class="lead">Atom</li>
+            <li class="lead">Webstorm</li>
+            <li class="lead">Visual Studio</li>
+            <li class="lead">Codepen</li>
+            <li class="lead">Adobe Photoshop</li>
+            <li class="lead">Adobe Illustrator</li>
+            <li class="lead">Github</li>
+            <li class="lead">Terminal</li>
+            <li class="lead">NPM</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <aside class="sidebar">
-    <div><a href="https://github.com/DuyBaloo" target="_blank"><i class="fab fa-github fa-3x"></i></a></div>
-    <div><a href="https://www.linkedin.com/in/duy-nguyen-b5656932/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a></div>
-    <div><a href="https://stackoverflow.com/users/10566335/duy-nguyen" target="_blank"><i class="fab fa-stack-overflow fa-3x"></i></a></div>
-  </aside>
-
-  <section class="contact">
-    <h5 class="hidden"><a name="info">asd</a></h5>
-    <h1>Are you interested?</h1>
-    <form class="container">
-      <div class="info">
-        <h2>Let's talk!</h2>
-        <input type="text" id="name" placeholder="Name" name="name"required>
-        <input type="email" placeholder="Enter Email" name="email" required>
-        <textarea placeholder="Your Message" name="message" rows="5"></textarea>
-        <input class="button" type="submit" id="submitButton">
+  <section class="projects" id="projects">
+    <h2 class="text-center">My Projects</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-6"><img src="./img/musicApp.jpg" alt="an app that finds your music" class="img-thumbnail"></div>
+        <div class="col-lg-8 col-sm-6">
+          <h3>Music Search Engine</h3>
+          <p class="lead">
+            A web application that looks for music with the help of Musixmatch API. Type in your key word and choose your search preference, a click you'll get all the information that you need.
+            Built with Bootstrap, JQuery and Musixmatch API.
+          </p>
+          <a target="_blank" href="musicApp.html"><button type="button" class="btn btn-primary">View Project</button></a>
+        </div>
       </div>
-    </form>
-    <a href="mailto:duybalu2003@yahoo.com" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6"><img src="./img/grid-3.jpg" alt="Responsive Login Form" class="img-thumbnail"></div>
+        <div class="col-lg-8 col-sm-6">
+          <h3>Responsive Login Form</h3>
+          <p class="lead">
+            This login form is fully responsive. I used only CSS instead of Bootstrap to challenge myself.
+          </p>
+          <a target="_blank" href="signinForm.html"><button type="button" class="btn btn-primary">View Project</button></a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6"><img src="./img/grid-4.jpg" alt="Word Typing Game" class="img-thumbnail"></div>
+        <div class="col-lg-8 col-sm-6">
+          <h4>Word Typing Game</h4>
+          <p class="lead">
+            A game created with JavaScript. Allowing the user an amount of time to type words matched with
+            the given ones on the screen.
+          </p>
+          <a target="_blank" href="wordTyper.html"><button type="button" class="btn btn-primary">View Project</button></a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6"><img src="./img/grid-1.jpg" alt="Hover Effect" class="img-thumbnail"></div>
+        <div class="col-lg-8 col-sm-6">
+          <h3>Layer Effect</h3>
+          <p class="lead">
+            I did this project in my free time since I like to mess around with CSS.
+            This Effect is made purely with CSS.
+          </p>
+          <a target="_blank" href="hoverEffect.html"><button type="button" class="btn btn-primary">View Project</button></a>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-lg-4 col-sm-6"><img src="./img/portfolio.jpg" alt="Duy Nguyen Website" class="img-thumbnail"></div>
+        <div class="col-lg-8 col-sm-6">
+          <h3>My Website</h3>
+          <p class="lead">
+            A fully responsive website using BootStrap4. Serving as a Portfolio.
+          </p>
+          <a target="_blank" href="http://duynguyen.site/index.html"><button type="button" class="btn btn-primary">View Project</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="info">
+    <div class="container">
+      <h2>Are you interested?</h2>
+      <h3>Let's talk!</h3>
+
+      <form>
+        <div class="info">
+          <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Your Message" name="message" rows="4" ></textarea>
+          </div>
+          <input class="btn btn-secondary" type="submit" value="Submit" id="submitButton">
+        </div>
+      </form>
+      <a href="mailto:duybalu2003@yahoo.com" target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
+      <a href="https://github.com/DuyBaloo" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+      <a href="https://www.linkedin.com/in/duy-nguyen-b5656932/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+      <a href="https://stackoverflow.com/users/10566335/duy-nguyen" target="_blank"><i class="fab fa-stack-overflow fa-3x"></i></a>
+    </div>
   </section>
 
   <footer>
-    <a href="index.html"><p>Duy Nguyen, Copyright &copy 2018</p></a>
+    <a href="index.html"><p class="h5">Duy Nguyen, Copyright &copy 2018</p></a>
   </footer>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script type="text/javascript">
-    AOS.init({
-      duration:2000
-    });
-    document.getElementById('submitButton').addEventListener('click', announceBox);
-    function announceBox(){
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-      var userinput = document.getElementById('name').value;
-      alert('Thank you for your interest ' + userinput + '. However, I do not have the resources to finish this function yet.');
-    }
-  </script>
 </body>
 </html>

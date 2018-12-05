@@ -1,0 +1,36 @@
+//Styling the user input area
+.jumbotron{
+  margin:3rem 0;
+  input{
+    margin-bottom: 1rem;
+  }
+  .custom-control{
+    margin-bottom: 0.5rem;
+  }
+}
+
+//style the table displaying results from search
+table{
+  tbody, thead{
+    tr{
+      th, td{
+        width:25%;
+        button{
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+
+//when viewing on smaller devices
+@media(max-width: 600px){
+  html{
+    font-size:14px;
+  }
+  .container{
+    table{
+      width: 500px;
+    }
+  }
+}

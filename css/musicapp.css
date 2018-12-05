@@ -1,0 +1,20 @@
+.jumbotron {
+  margin: 3rem 0; }
+  .jumbotron input {
+    margin-bottom: 1rem; }
+  .jumbotron .custom-control {
+    margin-bottom: 0.5rem; }
+
+table tbody tr th, table tbody tr td, table thead tr th, table thead tr td {
+  width: 25%; }
+  table tbody tr th button, table tbody tr td button, table thead tr th button, table thead tr td button {
+    word-wrap: break-word; }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px; }
+
+  .container table {
+    width: 500px; } }
+
+/*# sourceMappingURL=musicapp.css.map */

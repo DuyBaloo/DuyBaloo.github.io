@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAAU;EACR,MAAM,EAAC,MAAM;EACb,gBAAK;IACH,aAAa,EAAE,IAAI;EAErB,0BAAe;IACb,aAAa,EAAE,MAAM;;AAQnB,0EAAM;EACJ,KAAK,EAAC,GAAG;EACT,sGAAM;IACJ,SAAS,EAAE,UAAU;;AAQ/B,yBAAwB;EACtB,IAAI;IACF,SAAS,EAAC,IAAI;;EAGd,gBAAK;IACH,KAAK,EAAE,KAAK",
+"sources": ["musicapp.scss"],
+"names": [],
+"file": "musicapp.css"
+}
