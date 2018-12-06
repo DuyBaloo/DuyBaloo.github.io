@@ -188,9 +188,6 @@ span{
   h2{
     padding-top: 8rem;
   }
-  hr{
-
-  }
   .container {
     padding-top: 8rem;
 
@@ -297,6 +294,20 @@ footer{
     }
   }
 }
+@media (max-width: 1000px){
+  .projects{
+    .container{
+      .row{
+        .col-sm-12{
+          padding:0 2rem 1rem 2rem;
+          img .img-thumbnail{
+            margin-bottom:1rem;
+          }
+        }
+      }
+    }
+  }
+}
 
 //setting for devices under 700px width
 @media (max-width:600px){
@@ -304,6 +315,7 @@ footer{
     font-size:14px;
   }
   #intro{
+    background-attachment: scroll;
     .img{
       .text{
         h1 {
@@ -322,6 +334,16 @@ footer{
       max-width:75%;
     }
   }
+
+  .projects{
+    .container{
+      .row{
+        .col-sm-6{
+          text-align: center;
+        }
+      }
+    }
+  }
   .contact{
     .container{
       form {
@@ -329,19 +351,6 @@ footer{
       }
     }
   }
+
 }
 
-@media (max-width: 1000px){
-  .projects{
-    .container{
-     .row{
-        .col-sm-12{
-          padding:0 2rem 1rem 2rem;
-          img .img-thumbnail{
-            margin-bottom:1rem;
-          }
-        }
-      }
-    }
-  }
-}

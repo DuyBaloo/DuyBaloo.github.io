@@ -192,12 +192,19 @@ footer {
       color: #009d3a;
       text-decoration: none; }
 
+@media (max-width: 1000px) {
+  .projects .container .row .col-sm-12 {
+    padding: 0 2rem 1rem 2rem; }
+    .projects .container .row .col-sm-12 img .img-thumbnail {
+      margin-bottom: 1rem; } }
 @media (max-width: 600px) {
   html {
     font-size: 14px; }
 
-  #intro .img .text h1 {
-    margin-bottom: 3rem; }
+  #intro {
+    background-attachment: scroll; }
+    #intro .img .text h1 {
+      margin-bottom: 3rem; }
 
   .jumbotron img {
     width: 13rem; }
@@ -205,12 +212,10 @@ footer {
   .skills .container {
     max-width: 75%; }
 
+  .projects .container .row .col-sm-6 {
+    text-align: center; }
+
   .contact .container form {
     width: 80%; } }
-@media (max-width: 1000px) {
-  .projects .container .row .col-sm-12 {
-    padding: 0 2rem 1rem 2rem; }
-    .projects .container .row .col-sm-12 img .img-thumbnail {
-      margin-bottom: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */
