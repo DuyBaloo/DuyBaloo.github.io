@@ -15,7 +15,8 @@ footer {
   footer img {
     width: 100px; }
   footer .img-thumbnail {
-    border: none; }
+    border: none;
+    padding-left: 1rem; }
 
 @media (max-width: 600px) {
   html {

@@ -115,7 +115,8 @@ span {
         .skills .container .col-lg-6 ul li {
           margin-bottom: 0.4rem; }
     .skills .container .col-sm-12 {
-      padding: 1rem 2rem; }
+      padding: 1rem 2rem;
+      border-right: none; }
 
 .projects h2 {
   padding-top: 8rem; }
@@ -196,7 +197,10 @@ footer {
   .projects .container .row .col-sm-12 {
     padding: 0 2rem 1rem 2rem; }
     .projects .container .row .col-sm-12 img .img-thumbnail {
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+
+  .skills .container .col-lg-6:first-child {
+    border-right: none; } }
 @media (max-width: 600px) {
   html {
     font-size: 14px; }

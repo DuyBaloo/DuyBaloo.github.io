@@ -177,6 +177,7 @@ span{
     }
     .col-sm-12{
       padding: 1rem 2rem;
+      border-right:none;
     }
   }
 }
@@ -295,6 +296,7 @@ footer{
   }
 }
 @media (max-width: 1000px){
+
   .projects{
     .container{
       .row{
@@ -304,6 +306,14 @@ footer{
             margin-bottom:1rem;
           }
         }
+      }
+    }
+  }
+
+  .skills{
+    .container{
+      .col-lg-6:first-child{
+        border-right: none;
       }
     }
   }
