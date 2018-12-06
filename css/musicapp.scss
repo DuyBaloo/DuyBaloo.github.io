@@ -23,6 +23,18 @@ table{
   }
 }
 
+footer{
+  text-align: center;
+  img{
+    width: 100px;
+
+    }
+  .img-thumbnail{
+    border:none;
+  }
+}
+
+
 //when viewing on smaller devices
 @media(max-width: 600px){
   html{
