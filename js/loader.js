@@ -1,6 +1,6 @@
 document.onreadystatechange = function () {
   var state = document.readyState;
-  if (state == 'interactive') {
+  if (state == 'loading') {
        document.getElementById('body').style.visibility="hidden";
        document.getElementById('spinner').style.visibility="visible";
   } else if (state == 'complete') {

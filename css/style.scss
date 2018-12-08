@@ -45,13 +45,14 @@ span{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  text-align: center;
   height:100vh;
+  text-align: center;
   i {
     bottom: 2rem;
     position: absolute;
     color: #fff;
     font-size:3rem;
+    transform: translateX(-50%);
     &:hover {
       color: $span;
       transition: 1s;
@@ -278,7 +279,12 @@ footer{
   }
 }
 @media (max-width: 1000px){
-
+  #intro{
+    i{
+      opacity: 0;
+      z-index: -1;
+    }
+  }
   .projects{
     .container{
       .row{

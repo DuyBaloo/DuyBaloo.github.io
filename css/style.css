@@ -28,14 +28,20 @@
       /* Gives that scrolling effect as the typing happens */
       letter-spacing: .1em;
       /* Adjust as needed */
-      animation: typing 1s steps(40, end), blink-caret 0.5s step-end infinite; }
+      animation: typing 2s infinite, blink-caret .5s step-end infinite; }
 
 /* The typing effect */
 @keyframes typing {
   0% {
     width: 0; }
+  25% {
+    width: 100%; }
+  50% {
+    width: 80%; }
+  75% {
+    width: 100%; }
   100% {
-    width: 100%; } }
+    width: 80%; } }
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to {
@@ -87,13 +93,14 @@ span {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  text-align: center;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
   #intro i {
     bottom: 2rem;
     position: absolute;
     color: #fff;
-    font-size: 3rem; }
+    font-size: 3rem;
+    transform: translateX(-50%); }
     #intro i:hover {
       color: #009d3a;
       transition: 1s; }
@@ -244,6 +251,10 @@ footer {
       text-decoration: none; }
 
 @media (max-width: 1000px) {
+  #intro i {
+    opacity: 0;
+    z-index: -1; }
+
   .projects .container .row .col-sm-12 {
     padding: 0 2rem 1rem 2rem; }
     .projects .container .row .col-sm-12 img .img-thumbnail {

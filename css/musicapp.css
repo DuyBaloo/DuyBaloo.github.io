@@ -28,14 +28,20 @@
       /* Gives that scrolling effect as the typing happens */
       letter-spacing: .1em;
       /* Adjust as needed */
-      animation: typing 1s steps(40, end), blink-caret 0.5s step-end infinite; }
+      animation: typing 2s infinite, blink-caret .5s step-end infinite; }
 
 /* The typing effect */
 @keyframes typing {
   0% {
     width: 0; }
+  25% {
+    width: 100%; }
+  50% {
+    width: 80%; }
+  75% {
+    width: 100%; }
   100% {
-    width: 100%; } }
+    width: 80%; } }
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to {
