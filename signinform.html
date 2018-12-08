@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sign In</title>
-  <link rel="stylesheet" href="./css/signin.css">
+  <link rel="stylesheet" href="./css/signin.css?v=1.7">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
   <link rel="icon" href="favicon.ico">
 </head>
-<body>
+<body id="body">
+  <div class="spinner" id="spinner">
+    <div class="wrapper">
+      <i class="fas fa-code"></i>
+      <h3>Loading...</h3>
+
+    </div>
+  </div>
+
   <div class="signBody">
     <div class="container">
       <h1>Login</h1>
@@ -26,5 +35,6 @@
       </form>
     </div>
   </div>
+  <script src="./js/loader.js"></script>
 </body>
 </html>

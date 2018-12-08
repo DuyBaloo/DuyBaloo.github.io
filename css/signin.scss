@@ -1,4 +1,6 @@
-
+@import "format";
+@import "spinner";
+@import "effects";
 *{
   box-sizing: border-box;
   margin:0;
@@ -10,6 +12,8 @@
 .signBody{
   height:100vh;
   background: url("../img/signinbackground.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
   .container{
     position: absolute;
     top:50%;

@@ -1,0 +1,31 @@
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0 }
+  100% { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $span; }
+}
+
+//rotate effect
+@keyframes rotating{
+  0%{ transform: rotate(0)}
+  50%{ transform: rotate(360deg)}
+  100%{ transform: rotate(-360deg)}
+}
+
+//the text effect when load
+@keyframes reveal {
+  0%{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
