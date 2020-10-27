@@ -10,12 +10,12 @@ People eat everyday and it is surprising that not a lot of people keeping track 
 
 ## Personas
 
-### Persona 1
+### Persona 1 (Duy Nguyen)
 
-### Persona 2
+### Persona 2 (Omran Farighi)
 
-### Persona 3
+### Persona 3 (Joseph Pideon)
 
-### Persona 4
+### Persona 4 (Brandon Lokey)
 
 ## Vision Statement
