@@ -24,3 +24,5 @@ Alex usually uses google to find recipes that he wants to prepare for the week b
 ### Persona 4 (Brandon Lokey)
 
 ## Feature List
+
+- Automate calculating nutrition statistics for recipes.
