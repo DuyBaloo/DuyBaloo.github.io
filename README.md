@@ -16,6 +16,11 @@ People eat everyday and it is surprising that not a lot of people keeping track 
 
 ### Persona 3 (Joseph Pideon)
 
+Alex, age 20, is a student in his third year at Temple University (college) in Philadelphia. He is studying criminal justice. He was born in Alexandria, Virginia where he went to elementary school. After elementary school he moved to Allison Park, Pennsylvania, with his family and graduated from Hampton High School. He enjoys cooking and meal prepping so that he has a nutritious and balanced diet to get through the days.
+
+Alex usually uses google to find recipes that he wants to prepare for the week but finds it troublesome to account for the nutrition information. He often finds good recipes that he will want to cook again but wants an alternative to saving or bookmarking the recipes on his computer. He might use the Your Recipes application for recipe organization and for logging nutrition information if it is automated.
+
+
 ### Persona 4 (Brandon Lokey)
 
 ## Feature List
