@@ -25,4 +25,6 @@ Alex usually uses google to find recipes that he wants to prepare for the week b
 
 ## Feature List
 
-- Automate calculating nutrition statistics for recipes.
+- Automate calculating nutrition statistics for recipes based on the ingredients and servings.
+- Recipe organization by different categories (e.g. favorites, courses (breakfast, lunch, dinner, etc.), vegan, etc.).
+- Meal planning, the user can pin a particular recipe to the date he wants to cook it.
