@@ -12,6 +12,9 @@ For the average person who wants to learn how to cook, Your Recipes is a user fr
 ## Personas
 
 ### Persona 1 (Duy Nguyen)
+Rebecca, age 30, a stay at home mom with 2 children. She is a very busy mom since taking care of 2 children and doing house work take all of her time. What challenges her the most is managing her time. She finds it hard to keep wrestling with what to cook and how to save time going grocery shopping.
+
+It is clear that she needs something to help her with her tasks. Your Recipe would be a great assistant since Rebecca can plan out meals, what to pick up at the store, and save time. In addition, she can also control the diet of her family to keep everyone healthy.
 
 ### Persona 2 (Omran Farighi)
 
