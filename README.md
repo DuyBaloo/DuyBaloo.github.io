@@ -7,12 +7,17 @@ People eat everyday and it is surprising that not a lot of people keeping track 
 
 ## Vision Statement
 
+For the average person who wants to learn how to cook and eath healthy, Your Recipes is a user friendly web application that helps users find new, exciting recipes and provides nutrtional information for different food. Unlike MyFitnessPal which only shows caloric intake, Your Recipes will not only provide nutrtional information but also recipes to help maintain a healthy lifestyle.
 
 ## Personas
 
 ### Persona 1 (Duy Nguyen)
 
 ### Persona 2 (Omran Farighi)
+
+Linda, age 27, is a full time IT consultant in Washington D.C. Her work forces her to work long hours and she spends most of her days bouncing from meeting to meeting. To help relieve stress, Linda cooks. The kitchen is where she is most compfortable. While a student at Temple University, Linda developed a passion for cooking and trying new recipes. She hated dining hall food and wanted to learn how to cook high quality food. She would spend her free time looking up recipes and grocery shopping for the ingredients. 
+
+Once her career started, Linda did not have the time to spend reasearching recipes. She would still go grocery shopping but with no direction on what she wanted to cook, she only bought commonly used prouce, fruits, grains, and meat so the food she cooked was very generic and bland. Linda might use Your Recipes to find new ways to cook these generic ingredients. Your Recipes is able to develop recipes based on the available ingredients. Although Linda enjoys reasearching new recipes, Your Recipes still provides her with a new persepctive on how to cook with what she has so she does not have to keep eating the same generic and bland food.
 
 ### Persona 3 (Joseph Pideon)
 
