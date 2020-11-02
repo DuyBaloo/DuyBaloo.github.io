@@ -7,7 +7,7 @@ People eat everyday and it is surprising that not a lot of people keeping track 
 
 ## Vision Statement
 
-For the average person who wants to learn how to cook and eath healthy, Your Recipes is a user friendly web application that helps users find new, exciting recipes and provides nutrtional information for different food. Unlike MyFitnessPal which only shows caloric intake, Your Recipes will not only provide nutrtional information but also recipes to help maintain a healthy lifestyle.
+For the average person who wants to learn how to cook, Your Recipes is a user friendly web application that helps users find new, exciting recipes and provides nutrtional information for different food. Unlike MyFitnessPal which only shows caloric intake, Your Recipes will not only provide nutrtional information but also recipes to help a user learn to cook.
 
 ## Personas
 
