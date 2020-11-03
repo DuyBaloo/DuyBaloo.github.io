@@ -31,6 +31,10 @@ Alex usually uses google to find recipes that he wants to prepare for the week b
 
 ### Persona 4 (Brandon Lokey)
 
+Tyler, age 24, is a college student with a part-time retail job. Tyler is a biology major and often finds himself studying until late hours of the night after juggling between lectures and shifts at his job. Tyler has had some basic experience with cooking, but doesn't cook much. Often, he finds himself going to fast food restaurants or calling in take-out or delivery just because of the convenience of it. However, the costs are starting to catch up and he's tired of ordering from the same places over and over again. He wants to start cooking more to combat this, but he doesn't really know where to start.
+
+Tyler is looking to find a way to find new recipes that he can manage to cook easily and also be able to plan out what to get from the grocery store. He's tried looking online for some recipes that he may like, but upon searching he finds this task to be daunting and overwhelming. He might choose to use the Your Recipes application so he can easily search for things that he's comfortable cooking with and figure out what he needs to get next time he's at the grocery store without fear or confusion.
+
 ## Feature List
 
 - Automate calculating nutrition statistics for recipes based on the ingredients and servings.
