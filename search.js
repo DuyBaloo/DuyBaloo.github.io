@@ -72,8 +72,9 @@ function questionSearch() {
 
 
 function search() {
-	console.log(document.getElementById("searchForm").value);
-	console.log(document.getElementById("searchInput").value);
+	var searchString = document.getElementById("searchInput").value;
+	console.log("Radio button value: " + document.getElementById("searchForm").value);
+	console.log("Search value: " + searchString);
 }
 
 document.getElementById("btn").addEventListener("click", ingrediantSearch, true);
