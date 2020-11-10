@@ -88,6 +88,7 @@ function search() {
 		ingrediantSearch(searchString);
 	}
 	else if (value === "Recipe") {
+		console.log("hello from recipe");
 		recipeSearch(searchString);
 	}
 	else if (value === "Question") {
@@ -95,7 +96,7 @@ function search() {
 	}
 }
 
-/*document.getElementById("btn").addEventListener("click", ingrediantSearch, true);
-document.getElementById("btn2").addEventListener("click", recipeSearch, true);
-document.getElementById("btn3").addEventListener("click", questionSearch, true);*/
-document.getElementById("searchForm").addEventListener("submit", search, true);
+document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("apple"); });
+document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("chicken"); });
+document.getElementById("btn3").addEventListener("click", function(){ questionSearch("How much vitamin C is in an apple?"); });
+//document.getElementById("searchForm").addEventListener("submit", search, true);
