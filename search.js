@@ -73,11 +73,19 @@ function questionSearch() {
 
 function search() {
 	var searchString = document.getElementById("searchInput").value;
-	console.log("Radio button value: " + document.getElementById("searchForm").value);
+	let value = "";
+
+	for (i = 0; i < document.getElementsByName("customRadio").length; i++) {
+		if (document.getElementsByName("customRadio")[i].checked) {
+			value = document.getElementsByName("customRadio")[i].value;
+		}
+	}
+
+	console.log("Radio button value: " + value);
 	console.log("Search value: " + searchString);
 }
 
-document.getElementById("btn").addEventListener("click", ingrediantSearch, true);
+/*document.getElementById("btn").addEventListener("click", ingrediantSearch, true);
 document.getElementById("btn2").addEventListener("click", recipeSearch, true);
-document.getElementById("btn3").addEventListener("click", questionSearch, true);
+document.getElementById("btn3").addEventListener("click", questionSearch, true);*/
 document.getElementById("searchForm").addEventListener("submit", search, true);
