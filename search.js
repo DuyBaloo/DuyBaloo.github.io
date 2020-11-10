@@ -1,5 +1,5 @@
-function ingrediantSearch() {
-	var searchString = "chicken,carrots,potatoes";
+function ingrediantSearch(input) {
+	var searchString = input;
 	var ingrediantArr = searchString.split(',');
 
 	var ingrediantString = ingrediantArr.map(ingrediant => ingrediant + '%2C');
@@ -25,8 +25,8 @@ function ingrediantSearch() {
 
 }
 
-function recipeSearch() {
-	var recipeString = "burger";
+function recipeSearch(input) {
+	var recipeString = input;
 
 	let requestString = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?query=";
 
@@ -47,8 +47,8 @@ function recipeSearch() {
 	});
 }
 
-function questionSearch() {
-	var sentenceString = "How much vitamin C is in an apple?";
+function questionSearch(input) {
+	var sentenceString = input;
 	var encString = encodeURIComponent(sentenceString);
 
 	let requestString = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/quickAnswer?q=";
@@ -83,6 +83,16 @@ function search() {
 
 	console.log("Radio button value: " + value);
 	console.log("Search value: " + searchString);
+
+	if (value === "Ingrediant") {
+		ingrediantSearch(searchString);
+	}
+	else if (value === "Recipe") {
+		recipeSearch(searchString);
+	}
+	else if (value === "Question") {
+		questionSearch(searchString);
+	}
 }
 
 /*document.getElementById("btn").addEventListener("click", ingrediantSearch, true);
