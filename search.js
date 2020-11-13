@@ -72,7 +72,7 @@ function questionSearch(input) {
 		});
 }
 
-function search() {
+function search(){
 	var searchString = document.getElementById("searchInput").value.toString();
 	let value = "";
 
@@ -85,7 +85,7 @@ function search() {
 	console.log("Radio button value: " + value);
 	console.log("Search value: " + searchString);
 
-	if (value === "Ingrediant") {
+	if (value === "Ingredient") {
 		ingrediantSearch(searchString);
 	}
 	else if (value === "Recipe") {
@@ -97,6 +97,7 @@ function search() {
 }
 
 function displayRecipe(response){
+	let ingredients = [];
 	let output = `<table class="table table-hover">
 									<thead>
 											<th scope="col">Recipes</th>
@@ -104,23 +105,32 @@ function displayRecipe(response){
 									</thead>
 								 </table>
 								`;
-	for(let i in response){
-		console.log(response[0].title);
+
+	response.forEach(function(item, i){
+		let list = response[i].usedIngredients;
+		list.forEach(function(item, j)
+		{
+			console.log(item.name);
+			ingredients.push(item.name);
+		});
 			output += `
 							<table class="table table-hover">
 									<tbody>
 											<tr>
-												<th scope="row">${response[i].title}</th>
-												<td>${response[i].usedIngredients[0].name}</td>
+												<th scope="row">${item.title}</th>
+												<td>${ingredients}</td>
 									</tbody>
 							 </table>
 			`;
-	}
+	});
 	document.getElementById("results").innerHTML = output;
 
 }
-// document.getElementById("searchForm").addEventListener("submit", search, true);
+var form = document.getElementById("searchForm");
+function handleForm(event){event.preventDefault();}
+form.addEventListener('submit', handleForm);
+document.getElementById("searchForm").addEventListener("submit", search, true);
 
-document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("chicken,tomato,potatoes"); });
-document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("burger"); });
-document.getElementById("btn3").addEventListener("click", function(){ questionSearch("How much vitamin C is in an apple?"); });
+// document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("chicken,tomato,potatoes"); });
+// document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("burger"); });
+// document.getElementById("btn3").addEventListener("click", function(){ questionSearch("How much vitamin C is in an apple?"); });
