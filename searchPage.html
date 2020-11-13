@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Music Search App</title>
+  <title>Your Recipes</title>
   <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
   <link rel="stylesheet" href="./css/searchPage.css?v=1.7">
@@ -20,7 +20,7 @@
   </div>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand" href="musicapp.html">Your Recipe</a>
+      <a class="navbar-brand" href="musicapp.html">Your Recipes</a>
     </div>
   </nav>
 
@@ -30,6 +30,7 @@
         <h1 class="display-4">Food Search Engine</h1>
         <hr>
         <form class="form-group my-2 my-lg-0" id="searchForm">
+          <script src="search.js"></script>
           <input type="text" class="form-control" placeholder="Enter Your Search" id="searchInput">
           <div class="custom-control custom-radio">
             <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="Ingredient">
@@ -43,7 +44,7 @@
             <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" value="Question">
             <label class="custom-control-label" for="customRadio3">Search by your input</label>
           </div>
-          <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-primary my-2 my-sm-0">Search</button>
         </form>
       </div>
     </div>
