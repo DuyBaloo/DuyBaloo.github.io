@@ -17,7 +17,10 @@ function ingrediantSearch(input) {
 		}
 	})
 	.then(response => {
-		console.log(response.json());
+		return response.json();
+	}).then(response => {
+		console.log(response);
+		displayRecipe(response);
 	})
 	.catch(err => {
 		console.error(err);
@@ -92,8 +95,32 @@ function search() {
 		questionSearch(searchString);
 	}
 }
-document.getElementById("searchForm").addEventListener("click", search, true);
 
-/*document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("chicken,tomato,potatoes"); });
+function displayRecipe(response){
+	let output = `<table class="table table-hover">
+									<thead>
+											<th scope="col">Recipes</th>
+											<th scope="col">Ingredients</th>
+									</thead>
+								 </table>
+								`;
+	for(let i in response){
+		console.log(response[0].title);
+			output += `
+							<table class="table table-hover">
+									<tbody>
+											<tr>
+												<th scope="row">${response[i].title}</th>
+												<td>${response[i].usedIngredients[0].name}</td>
+									</tbody>
+							 </table>
+			`;
+	}
+	document.getElementById("results").innerHTML = output;
+
+}
+// document.getElementById("searchForm").addEventListener("submit", search, true);
+
+document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("chicken,tomato,potatoes"); });
 document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("burger"); });
-document.getElementById("btn3").addEventListener("click", function(){ questionSearch("How much vitamin C is in an apple?"); });*/
+document.getElementById("btn3").addEventListener("click", function(){ questionSearch("How much vitamin C is in an apple?"); });
