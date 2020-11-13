@@ -1,5 +1,4 @@
 function ingrediantSearch(input) {
-	console.log("Hello from Ingrediant");
 	var searchString = input;
 	var ingrediantArr = searchString.split(',');
 
@@ -23,12 +22,9 @@ function ingrediantSearch(input) {
 	.catch(err => {
 		console.error(err);
 	});
-	
-	console.log("Done with ingrediant");
 }
 
 function recipeSearch(input) {
-	console.log("Hello from Recipe");
 	var recipeString = input;
 
 	let requestString = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?query=";
@@ -48,12 +44,9 @@ function recipeSearch(input) {
 	.catch(err => {
 		console.error(err);
 	});
-	
-	console.log("Done with recipe");
 }
 
 function questionSearch(input) {
-	console.log("Hello from Question");
 	var sentenceString = input;
 	var encString = encodeURIComponent(sentenceString);
 
@@ -74,9 +67,7 @@ function questionSearch(input) {
 		.catch(err => {
 			console.error(err);
 		});
-		console.log("Done with question");
 }
-
 
 function search() {
 	var searchString = document.getElementById("searchInput").value.toString();
@@ -101,8 +92,8 @@ function search() {
 		questionSearch(searchString);
 	}
 }
-document.getElementById("searchForm").addEventListener("submit", search, true);
+document.getElementById("searchForm").addEventListener("click", search, true);
 
-document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("apple"); });
-document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("chicken"); });
-document.getElementById("btn3").addEventListener("click", function(){ questionSearch("How much vitamin C is in an apple?"); });
+/*document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("chicken,tomato,potatoes"); });
+document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("burger"); });
+document.getElementById("btn3").addEventListener("click", function(){ questionSearch("How much vitamin C is in an apple?"); });*/
