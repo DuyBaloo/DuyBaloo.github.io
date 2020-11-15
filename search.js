@@ -20,7 +20,7 @@ function ingrediantSearch(input) {
 		return response.json();
 	}).then(response => {
 		console.log(response);
-		displayRecipe(response);
+		displayIngredient(response);
 	})
 	.catch(err => {
 		console.error(err);
@@ -42,7 +42,10 @@ function recipeSearch(input) {
 	}
 	})
 	.then(response => {
-		console.log(response.json());
+		return response.json();
+	}).then(response => {
+		console.log(response);
+		displayRecipe(response);
 	})
 	.catch(err => {
 		console.error(err);
@@ -65,7 +68,10 @@ function questionSearch(input) {
 		}
 		})
 		.then(response => {
-			console.log(response.json());
+			return response.json();
+		}).then(response => {
+			console.log(response);
+			displayQuestion(response);
 		})
 		.catch(err => {
 			console.error(err);
@@ -96,33 +102,93 @@ function search(){
 	}
 }
 
-function displayRecipe(response){
+function displayIngredient(response){
 	let ingredients = [];
+	let missedIngredients = [];
 	let output = `<table class="table table-hover">
 									<thead>
 											<th scope="col">Recipes</th>
 											<th scope="col">Ingredients</th>
+											<th scope="col">Missing Ingredients</th>
+											<th scope="col">Likes</th>
 									</thead>
 								 </table>
 								`;
 
 	response.forEach(function(item, i){
 		let list = response[i].usedIngredients;
+		let missedList = response[i].missedIngredients;
 		list.forEach(function(item, j)
 		{
 			console.log(item.name);
 			ingredients.push(item.name);
 		});
+		missedList.forEach(function(item, j)
+		{
+			missedIngredients.push(item.name);
+		})
 			output += `
 							<table class="table table-hover">
 									<tbody>
 											<tr>
 												<th scope="row">${item.title}</th>
 												<td>${ingredients}</td>
+												<td>${missedIngredients}</td>
+												<td>${item.likes}</td>
 									</tbody>
 							 </table>
 			`;
 	});
+	document.getElementById("results").innerHTML = output;
+
+}
+
+function displayRecipe(response){
+	let recipes = response.results;
+	let output = `<table class="table table-hover">
+									<thead>
+											<th scope="col">Recipes</th>
+											<th scope="col">Ready in (mins)</th>
+											<th scope="col">Servings</th>
+											<th scope="col">Link</th>
+									</thead>
+								 </table>
+								`;
+
+	recipes.forEach(function(item, i){
+			output += `
+							<table class="table table-hover">
+									<tbody>
+											<tr>
+												<th scope="row">${item.title}</th>
+												<td>${item.readyInMinutes}</td>
+												<td>${item.servings}</td>
+												<td><a href="${item.sourceUrl}" target="_blank"><button type="button" class="btn btn-primary">View Recipe</button></a></td>
+									</tbody>
+							 </table>
+			`;
+	});
+	document.getElementById("results").innerHTML = output;
+
+}
+
+function displayQuestion(response){
+
+	let output = `<table class="table table-hover">
+									<thead>
+											<th scope="col">Answer</th>
+									</thead>
+								 </table>
+								`;
+
+			output += `
+							<table class="table table-hover">
+									<tbody>
+											<tr>
+												<td>${response.answer}</th>
+									</tbody>
+							 </table>
+			`;
 	document.getElementById("results").innerHTML = output;
 
 }
@@ -133,4 +199,4 @@ document.getElementById("searchForm").addEventListener("submit", search, true);
 
 // document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("chicken,tomato,potatoes"); });
 // document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("burger"); });
-// document.getElementById("btn3").addEventListener("click", function(){ questionSearch("How much vitamin C is in an apple?"); });
+// document.getElementById("btn3").addEventListener("click", function(){ questionSearch("calories in burger"); });
