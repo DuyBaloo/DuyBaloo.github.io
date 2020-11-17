@@ -1,6 +1,6 @@
 function ingrediantSearch(input) {
 	var searchString = input;
-	var ingrediantArr = searchString.split(',');
+	var ingrediantArr = searchString.split(', ');
 
 	var ingrediantString = ingrediantArr.map(ingrediant => ingrediant + '%2C');
 
@@ -76,6 +76,30 @@ function questionSearch(input) {
 		.catch(err => {
 			console.error(err);
 		});
+}
+
+function idSearch(input) {
+	var id = input;
+
+	let requestString = "https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/";
+
+	requestString = requestString + id + "/information";
+
+	fetch(requestString, {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-key": "1c21a777d3msh628208c1292df8fp188f2djsn6a46b7c57061",
+		"x-rapidapi-host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com"
+	}
+	})
+	.then(response => {
+		return response.json();
+	}).then(response => {
+		console.log(response);
+	})
+	.catch(err => {
+		console.error(err);
+	});
 }
 
 function search(){
@@ -197,6 +221,7 @@ function handleForm(event){event.preventDefault();}
 form.addEventListener('submit', handleForm);
 document.getElementById("searchForm").addEventListener("submit", search, true);
 
-// document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("chicken,tomato,potatoes"); });
-// document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("burger"); });
-// document.getElementById("btn3").addEventListener("click", function(){ questionSearch("calories in burger"); });
+/*document.getElementById("btn").addEventListener("click", function(){ ingrediantSearch("chicken, tomato,potatoes"); });
+document.getElementById("btn2").addEventListener("click", function(){ recipeSearch("burger"); });
+document.getElementById("btn3").addEventListener("click", function(){ questionSearch("calories in burger"); });
+document.getElementById("btn4").addEventListener("click", function(){ idSearch(479101)});*/
