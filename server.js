@@ -9,7 +9,7 @@ const MongoStore = require('connect-mongo')(session)
 const ObjectId = mongoose.Types.ObjectId
 
 
-const Schema = mongoose.Schema;
+const Schema = mongoose.Schema
 
 
 const app = express()
@@ -17,10 +17,17 @@ const port = 3000
 
 
 app.get('/', (req, res) => {
-    res.send('Lets code!')
+    return res.redirect('/search')
 })
 
 
+// send out search page
+app.get('/search', (req, res) => {
+    res.sendFile(__dirname + '/searchPage.html')
+})
+
+
+// session configuration
 app.use(session({
     secret: "sjdciyisndks",
     store: new MongoStore({
@@ -43,7 +50,7 @@ app.use(bodyParser.json()) // parse application/json
 
 
 // Connect to database
-mongoose.connect('mongodb://localhost:27017/YourRecipesDB', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://your:recipes@yourrecipes.thepu.mongodb.net/<dbname>?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
 
 
 // Create account schema
