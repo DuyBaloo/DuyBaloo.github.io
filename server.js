@@ -2,9 +2,11 @@ const express = require('express')
 var bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
+var session = require('express-session')
+const MongoStore = require('connect-mongo')(session)
 
 
-//const ObjectId = mongoose.Types.ObjectId
+const ObjectId = mongoose.Types.ObjectId
 
 
 const Schema = mongoose.Schema;
@@ -15,8 +17,25 @@ const port = 3000
 
 
 app.get('/', (req, res) => {
-  res.send('Lets code!')
+    res.send('Lets code!')
 })
+
+
+app.use(session({
+    secret: "sjdciyisndks",
+    store: new MongoStore({
+        mongooseConnection: mongoose.connection,
+        autoRemove: 'native'
+    }),
+    name: "YourRecipesSec",
+    saveUninitialized: false,
+    rolling: true,
+    resave: true,
+    cookie: {
+        domain: "localhost",
+        maxAge: 1000*60*60*24*365
+    }
+}))
 
 
 app.use(bodyParser.urlencoded({ extended: false })) // parse application/x-www-form-urlencoded
@@ -45,10 +64,10 @@ app.get('/signup', (req, res) => {
 })
 
 
-// recieve data from signup
+// process signup
 app.post('/api/signup', async (req, res) => {
     var result = {success: false}
-    
+
     try{
         //Search if username is taken
         var foundDoc = await new Promise((resolve, reject) => {
@@ -94,6 +113,56 @@ app.post('/api/signup', async (req, res) => {
 
     res.json(result)
 
+})
+
+
+// Send out login page
+app.get('/login', (req, res) => {
+    res.sendFile(__dirname + '/login.html')
+})
+
+
+// process login
+app.post('/api/login', async (req, res) => {
+    var result = {success: false}
+
+    try{
+        if(req.session.uid) throw "You're already logged in!"
+
+        //sanitization
+        var username = req.body.username
+        if(!username) throw "Missing username!"
+
+        var password = req.body.password
+        if(!password) throw "Missing password!"
+
+        var accData = await new Promise((resolve, reject) => {
+            AccModel.findOne({username: username}, function(err, doc){
+                if(err) reject(err)
+                resolve(doc)
+            })
+        })
+        if(!accData) throw "No account exists with that username!"
+
+        var accPas = accData.password
+
+        var passwordMatched = await bcrypt.compare(password, accPas)
+        if(!passwordMatched) throw "The password is incorrect!"
+
+        req.session.uid = accData._id
+
+        result.success = true
+
+    }
+    catch(e){
+        if(typeof e === "string") result.reason = e
+        else {
+            result.reason = "Server error"
+            console.log(e)
+        }
+    }
+
+    res.json(result)
 })
 
 
