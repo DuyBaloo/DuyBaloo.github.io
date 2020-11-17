@@ -1,6 +1,6 @@
 function ingrediantSearch(input) {
 	var searchString = input;
-	var ingrediantArr = searchString.split(', ');
+	var ingrediantArr = searchString.split(", ");
 
 	var ingrediantString = ingrediantArr.map(ingrediant => ingrediant + '%2C');
 
