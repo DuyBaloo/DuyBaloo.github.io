@@ -27,6 +27,10 @@ app.get('/search', (req, res) => {
 })
 
 
+// serve static files
+app.use("/static", express.static('./static/'))
+
+
 // session configuration
 app.use(session({
     secret: "sjdciyisndks",
@@ -50,7 +54,7 @@ app.use(bodyParser.json()) // parse application/json
 
 
 // Connect to database
-mongoose.connect('mongodb+srv://your:recipes@yourrecipes.thepu.mongodb.net/<dbname>?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb+srv://your:recipes@yourrecipes.thepu.mongodb.net/YourRecipesDB?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
 
 
 // Create account schema
