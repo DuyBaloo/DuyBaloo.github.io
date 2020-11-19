@@ -177,6 +177,13 @@ app.post('/api/login', async (req, res) => {
 })
 
 
+// logout mechanism
+app.get('/logout', (req, res) => {
+    if(req.session.uid) req.session.destroy()
+    res.redirect("/login")
+})
+
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
