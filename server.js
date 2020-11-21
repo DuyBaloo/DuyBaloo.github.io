@@ -16,17 +16,6 @@ const app = express()
 const port = 3000
 
 
-app.get('/', (req, res) => {
-    return res.redirect('/search')
-})
-
-
-// send out search page
-app.get('/search', (req, res) => {
-    res.sendFile(__dirname + '/searchPage.html')
-})
-
-
 // serve static files
 app.use("/static", express.static('./static/'))
 
@@ -123,7 +112,6 @@ app.post('/api/signup', async (req, res) => {
     }
 
     res.json(result)
-
 })
 
 
@@ -177,10 +165,45 @@ app.post('/api/login', async (req, res) => {
 })
 
 
+app.get('/', (req, res) => {
+    return res.redirect('/search')
+})
+
+
+// send out search page
+app.get('/search', async (req, res) => {
+    res.sendFile(__dirname + '/searchPage.html')
+})
+
+
+app.get('/test', async (req,res)=>{
+    if(!req.session.uid) return res.json(null)
+
+    var id = new ObjectId(req.session.uid)
+
+    var accData = await new Promise((resolve, reject) => {
+        AccModel.findOne({_id: id}, function(err, doc){
+            if(err) reject(err)
+            resolve(doc)
+        })
+    })
+
+    var username = accData.username
+    var email = accData.email
+
+    res.json({username: username , message: email})
+})
+
+
+app.get('/render',(req,res)=>{
+    res.sendFile(__dirname +"/test.html")
+})
+
+
 // logout mechanism
 app.get('/logout', (req, res) => {
     if(req.session.uid) req.session.destroy()
-    res.redirect("/login")
+    res.redirect("/")
 })
 
 
